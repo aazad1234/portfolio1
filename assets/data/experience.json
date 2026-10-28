@@ -1,0 +1,89 @@
+{
+  "disclaimer": "Illustrative career timeline. The roles, companies and education below are sample content, not a verified employment history. Replace them with your own details before publishing.",
+  "experience": [
+    {
+      "role": "Independent Full-Stack Developer",
+      "company": "Freelance & product collaborations",
+      "location": "San Francisco, CA · Remote",
+      "start": "2021",
+      "end": "Present",
+      "period": "2021 — Present",
+      "current": true,
+      "summary": "Partner with small product teams to design, build and improve web applications from early concept through production.",
+      "highlights": [
+        "Lead frontend and full-stack delivery for product experiments and production features.",
+        "Translate loose product briefs into scoped, testable implementation plans.",
+        "Build reusable UI foundations, API integrations and deployment workflows."
+      ],
+      "stack": ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Product Studio (sample)",
+      "location": "San Francisco, CA",
+      "start": "2020",
+      "end": "2021",
+      "period": "2020 — 2021",
+      "current": false,
+      "summary": "Built customer-facing interfaces for a small studio serving early-stage product teams.",
+      "highlights": [
+        "Developed responsive product interfaces from Figma prototypes.",
+        "Introduced shared component patterns and clearer CSS conventions.",
+        "Worked with backend engineers on API contracts and loading states."
+      ],
+      "stack": ["React", "JavaScript", "Sass", "REST APIs"]
+    },
+    {
+      "role": "Web Developer",
+      "company": "Digital Agency (sample)",
+      "location": "Remote",
+      "start": "2018",
+      "end": "2020",
+      "period": "2018 — 2020",
+      "current": false,
+      "summary": "Delivered marketing sites and lightweight web applications for a range of small organisations.",
+      "highlights": [
+        "Converted design systems into reusable page components.",
+        "Improved page performance and cross-browser consistency.",
+        "Supported content editors with practical documentation and handover."
+      ],
+      "stack": ["HTML", "CSS", "JavaScript", "WordPress"]
+    }
+  ],
+  "education": [
+    {
+      "qualification": "BSc Computer Science",
+      "institution": "State University (sample)",
+      "location": "California",
+      "period": "2014 — 2018",
+      "note": "Illustrative education entry. Replace it with your own qualification or remove this section."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand the problem",
+      "description": "Start with the decision the user is trying to make, not the screen they are on."
+    },
+    {
+      "title": "Make the path visible",
+      "description": "Sketch flows and states early so ambiguity is exposed before code is written."
+    },
+    {
+      "title": "Build in slices",
+      "description": "Ship a working vertical slice, learn from it, then widen the surface area."
+    },
+    {
+      "title": "Leave it documented",
+      "description": "A clean handover is part of the deliverable, not an afterthought."
+    }
+  ],
+  "now": {
+    "title": "What I'm focused on now",
+    "items": [
+      "Design systems that survive real product pressure",
+      "Accessible, data-heavy interfaces",
+      "Small tools that make product teams faster",
+      "Performance budgets that are easy to keep"
+    ]
+  }
+}

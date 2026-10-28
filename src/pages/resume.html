@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="resume" class="page-resume">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <section class="page-hero page-hero-compact" aria-labelledby="resume-title">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <!-- @breadcrumbs:Home|index.html;Résumé -->
+        <div class="resume-hero">
+          <div class="reveal">
+            <p class="eyebrow">Résumé</p>
+            <h1 class="page-title" id="resume-title">A printable overview.</h1>
+            <p class="page-lede">The short version of the story: full-stack product work, thoughtful interfaces and a practical approach to delivery.</p>
+          </div>
+          <div class="resume-actions reveal">
+            <button class="btn btn-primary" type="button" data-print>
+              Print / save as PDF
+              <svg class="icon" aria-hidden="true"><use href="#icon-printer"></use></svg>
+            </button>
+            <a class="btn btn-ghost" href="contact.html">Contact me <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-section" aria-label="Résumé content">
+      <div class="container">
+        <article class="resume-sheet" id="resume-sheet">
+          <header class="resume-header">
+            <div>
+              <p class="resume-name">{{OWNER_NAME}}</p>
+              <p class="resume-title">{{OWNER_ROLE}}</p>
+            </div>
+            <ul class="resume-contact">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg><a href="mailto:{{OWNER_EMAIL}}">{{OWNER_EMAIL}}</a></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg><a href="tel:{{OWNER_PHONE_HREF}}">{{OWNER_PHONE}}</a></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>{{LOCATION_DISPLAY}}</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-globe"></use></svg><a href="{{SITE_URL}}">{{SITE_URL}}</a></li>
+            </ul>
+          </header>
+
+          <section class="resume-block" aria-labelledby="resume-profile-title">
+            <h2 id="resume-profile-title">Profile</h2>
+            <p>{{OWNER_BIO_SHORT}}</p>
+            <p>Product-focused full-stack developer with experience across React, Node.js and modern cloud delivery. Comfortable owning a feature from first flow through to release and handover.</p>
+          </section>
+
+          <section class="resume-block" aria-labelledby="resume-experience-title">
+            <h2 id="resume-experience-title">Experience</h2>
+            <!-- @render:resume-experience -->
+          </section>
+
+          <section class="resume-block" aria-labelledby="resume-skills-title">
+            <h2 id="resume-skills-title">Skills</h2>
+            <div class="resume-skill-grid">
+              <!-- @render:resume-skills -->
+            </div>
+          </section>
+
+          <section class="resume-block" aria-labelledby="resume-education-title">
+            <h2 id="resume-education-title">Education</h2>
+            <!-- @render:resume-education -->
+          </section>
+
+          <footer class="resume-footer">
+            <p>References and a fuller portfolio are available on request.</p>
+            <p>{{SITE_URL}}</p>
+          </footer>
+        </article>
+
+        <p class="resume-note">Demo content: this résumé uses illustrative experience and education details. Replace them in <code>assets/data/experience.json</code> before publishing.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

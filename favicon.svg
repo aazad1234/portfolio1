@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="John Anderson">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset=".58" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="14" y1="2" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <circle cx="14" cy="11" r="19" fill="url(#shine)"/>
+  <path d="M38 16H27v6h5v15c0 4.4-2 6.5-6 6.5-2.2 0-4.3-.8-6-2.3l-3.3 5.2c2.4 2 5.5 3.1 9.4 3.1 7.3 0 12-4.3 12-12.1V16z" fill="#fff"/>
+  <circle cx="47.5" cy="46.5" r="4.5" fill="#34D399"/>
+</svg>

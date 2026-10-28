@@ -1,0 +1,247 @@
+{
+  "intro": "Notes on building for the web: interface systems, performance, accessibility and the small decisions that make software easier to live with.",
+  "posts": [
+    {
+      "slug": "design-systems-that-stay-small",
+      "output": "blog-design-systems-that-stay-small.html",
+      "title": "Design systems that stay small",
+      "excerpt": "A design system earns its keep when it removes decisions, not when it collects components. Here is the small-system approach I keep coming back to.",
+      "category": "Design engineering",
+      "filter": "design",
+      "date": "2026-02-18",
+      "dateDisplay": "February 18, 2026",
+      "readTime": "6 min read",
+      "author": "John Anderson",
+      "image": "assets/images/blog-design-systems.svg",
+      "imageAlt": "Abstract illustration of layered interface components",
+      "featured": true,
+      "tags": ["Design systems", "CSS", "Frontend"],
+      "content": [
+        {
+          "type": "lead",
+          "text": "Most design systems do not fail because they are too simple. They fail because they keep growing after the original problem has been solved. The useful version is smaller, stricter and a little boring."
+        },
+        {
+          "type": "heading",
+          "text": "Start with the decisions, not the components"
+        },
+        {
+          "type": "paragraph",
+          "text": "A component library is an output. The valuable input is a shared set of decisions: how spacing works, which type sizes exist, what a focus state looks like, when a surface should have a border instead of a shadow. If those decisions are clear, a small number of primitives can cover a surprising amount of product surface."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before adding a new component, I ask what decision it encodes. If the answer is only this one screen, it belongs in the product, not the system. That single question prevents most of the accidental complexity that makes a system hard to maintain."
+        },
+        {
+          "type": "callout",
+          "title": "A useful test",
+          "text": "Can someone build a new page without asking a designer which spacing token or text style to use? If not, the gap is in the system's decisions, not its component count."
+        },
+        {
+          "type": "heading",
+          "text": "Keep the primitives honest"
+        },
+        {
+          "type": "paragraph",
+          "text": "The primitives should be the things that are genuinely stable: layout, type, colour, spacing, focus, motion. Product-specific patterns can compose them. A pricing table, a dashboard card and a checkout summary should not all need their own entry in the system if they share the same underlying rules."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use tokens for decisions that repeat, not for every value in Figma.",
+            "Give components one clear job and a narrow API.",
+            "Document the awkward cases: empty, loading, error and long content.",
+            "Delete components that no longer have a consumer."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Treat documentation as part of the interface"
+        },
+        {
+          "type": "paragraph",
+          "text": "A component is not finished when it renders. It is finished when the next person can choose it confidently. That means a short usage note, a visible code example and a clear statement of what the component does not handle. Documentation does not need to be a separate website; a well-commented source file and a small showcase page are often enough."
+        },
+        {
+          "type": "quote",
+          "text": "The best design system is the one the team can still understand after the person who built it has moved on.",
+          "cite": "A working principle"
+        },
+        {
+          "type": "heading",
+          "text": "Measure by friction removed"
+        },
+        {
+          "type": "paragraph",
+          "text": "It is tempting to measure a system by adoption or component count. Those numbers can grow while the team still makes the same decisions from scratch. I prefer a simpler measure: what recurring questions disappeared? When spacing, focus states and responsive behaviour stop being debates, the system is doing its job."
+        },
+        {
+          "type": "paragraph",
+          "text": "Small systems are not less ambitious. They are designed to stay useful. A small system with clear rules is easier to extend than a large one with unclear ownership, and it leaves more room for the product to change."
+        }
+      ]
+    },
+    {
+      "slug": "performance-budget",
+      "output": "blog-performance-budget.html",
+      "title": "A practical performance budget for content sites",
+      "excerpt": "Performance budgets work best when they are attached to user experience, not just numbers. A lightweight approach for content-led sites.",
+      "category": "Performance",
+      "filter": "performance",
+      "date": "2026-01-27",
+      "dateDisplay": "January 27, 2026",
+      "readTime": "7 min read",
+      "author": "John Anderson",
+      "image": "assets/images/blog-performance-budget.svg",
+      "imageAlt": "Abstract illustration of speed, charts and browser windows",
+      "featured": false,
+      "tags": ["Performance", "Core Web Vitals", "CSS"],
+      "content": [
+        {
+          "type": "lead",
+          "text": "A performance budget is only useful if it changes a decision. A number nobody checks is a wish. The version that works is small, visible and tied to the experience you are trying to protect."
+        },
+        {
+          "type": "heading",
+          "text": "Start with the reading experience"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a content site, the critical journey is simple: open a page, understand what it is, start reading. Everything else is secondary. I set budgets around that journey first: how quickly the page can render readable text, how much the layout moves while loading, and how quickly the main thread becomes available for interaction."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A useful first render on a mid-range phone, not a developer laptop.",
+            "No image should cause a visible layout shift.",
+            "Fonts should not hide the content for long enough to matter.",
+            "The page should remain usable when JavaScript fails or loads late."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Budget the expensive parts"
+        },
+        {
+          "type": "paragraph",
+          "text": "It is more effective to budget categories than individual files. Images are usually the heaviest part of a content page, followed by fonts and third-party scripts. If the budget for images is explicit, a large hero image becomes a conversation rather than a surprise."
+        },
+        {
+          "type": "callout",
+          "title": "A simple baseline",
+          "text": "Keep the initial HTML and critical CSS small, serve one appropriately sized image for the hero, lazy-load everything below the fold, and avoid loading a framework for interactions that a few small modules can handle."
+        },
+        {
+          "type": "heading",
+          "text": "Make the budget visible"
+        },
+        {
+          "type": "paragraph",
+          "text": "A budget only survives if it is part of the workflow. I add a lightweight check to the build or CI that reports page weight and counts of render-blocking resources. It does not need to fail every build at first. A visible report is often enough to keep the next change honest."
+        },
+        {
+          "type": "code",
+          "language": "text",
+          "code": "page: /projects\nhtml: 18 kB\ncss: 24 kB\njs: 31 kB\nimages: 420 kB (lazy below fold)\nrender-blocking requests: 1"
+        },
+        {
+          "type": "heading",
+          "text": "Judge with real conditions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lab numbers are useful for comparison, but they are not the experience. Check a representative phone, a slower network and a page that is not the home page. A blog article is often the real test: it has text, an image, navigation and perhaps a share control. If that page feels immediate, the foundation is probably healthy."
+        },
+        {
+          "type": "quote",
+          "text": "Performance is a product quality, not a one-time audit. The budget is how you keep it from quietly disappearing.",
+          "cite": "A working principle"
+        },
+        {
+          "type": "paragraph",
+          "text": "The goal is not a perfect score. The goal is to protect the moments that matter: the page appears, the text is readable, and the interface responds. A budget that keeps those moments intact is doing its job."
+        }
+      ]
+    },
+    {
+      "slug": "api-design-checklist",
+      "output": "blog-api-checklist.html",
+      "title": "An API design checklist I actually use",
+      "excerpt": "A short, practical checklist for APIs that are pleasant to consume, predictable to debug and safe to change.",
+      "category": "Engineering",
+      "filter": "engineering",
+      "date": "2026-01-08",
+      "dateDisplay": "January 8, 2026",
+      "readTime": "5 min read",
+      "author": "John Anderson",
+      "image": "assets/images/blog-api-checklist.svg",
+      "imageAlt": "Abstract illustration of connected API endpoints and data flows",
+      "featured": false,
+      "tags": ["APIs", "Node.js", "Architecture"],
+      "content": [
+        {
+          "type": "lead",
+          "text": "Good APIs are not just consistent. They make the next decision obvious. This is the short checklist I run through before an API becomes something other people have to live with."
+        },
+        {
+          "type": "heading",
+          "text": "Name things from the consumer's side"
+        },
+        {
+          "type": "paragraph",
+          "text": "An endpoint should describe the resource or action the consumer is asking for, not the internal table or service that happens to support it. If a frontend developer has to read backend code to guess the shape of a response, the naming has not finished its job."
+        },
+        {
+          "type": "heading",
+          "text": "Make errors part of the contract"
+        },
+        {
+          "type": "paragraph",
+          "text": "Success responses get designed. Errors often do not. A useful error has a stable machine-readable code, a human-readable message and enough context to fix the request. The same shape should apply across endpoints so the client can handle errors once."
+        },
+        {
+          "type": "code",
+          "language": "json",
+          "code": "{\n  \"error\": {\n    \"code\": \"validation_error\",\n    \"message\": \"The email address is not valid.\",\n    \"field\": \"email\"\n  }\n}"
+        },
+        {
+          "type": "heading",
+          "text": "Design for partial failure"
+        },
+        {
+          "type": "paragraph",
+          "text": "A page often needs more than one resource. Decide whether the client should compose requests or whether a small, explicit aggregate endpoint is worth it. Whichever you choose, make loading, empty and degraded states easy to represent. An API that only models the happy path pushes complexity into every consumer."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Use stable identifiers and predictable collection shapes.",
+            "Keep pagination, filtering and sorting consistent across resources.",
+            "Validate input at the boundary and return useful messages.",
+            "Version deliberately, or design changes that do not break clients.",
+            "Document an example request and response for every endpoint."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Leave a trail for the next reader"
+        },
+        {
+          "type": "paragraph",
+          "text": "A short README with a request example, a response example and the decisions behind a non-obvious field is worth more than a large generated reference nobody reads. Write down why the API works the way it does. The next person will need that context more than another endpoint."
+        },
+        {
+          "type": "quote",
+          "text": "The measure of an API is not how much it exposes. It is how confidently someone else can use it.",
+          "cite": "A working principle"
+        },
+        {
+          "type": "paragraph",
+          "text": "The checklist is intentionally small. An API can be clever and still be hard to use. The goal is the opposite: a contract that feels obvious, behaves predictably and makes the product around it easier to build."
+        }
+      ]
+    }
+  ]
+}

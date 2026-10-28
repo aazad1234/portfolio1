@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="projects" class="page-project">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <article class="project-detail">
+      <section class="page-hero project-hero" aria-labelledby="project-title">
+        <div class="page-hero-glow" aria-hidden="true"></div>
+        <div class="container">
+          <!-- @breadcrumbs -->
+          <div class="page-hero-grid">
+            <div class="reveal">
+              <div class="project-kicker">
+                <span class="badge badge-soft">{{PROJECT_CATEGORY}}</span>
+                <span class="project-kicker-year">{{PROJECT_YEAR}}</span>
+                {{PROJECT_DEMO_BADGE}}
+              </div>
+              <h1 class="page-title" id="project-title">{{PROJECT_TITLE}}</h1>
+              <p class="page-lede">{{PROJECT_SUMMARY}}</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="contact.html">Discuss a similar project <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+                <a class="btn btn-ghost" href="projects.html">All projects <svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"></use></svg></a>
+              </div>
+            </div>
+            <figure class="project-hero-media reveal">
+              <img src="{{PROJECT_IMAGE}}" alt="{{PROJECT_IMAGE_ALT}}" width="{{PROJECT_IMAGE_WIDTH}}" height="{{PROJECT_IMAGE_HEIGHT}}" fetchpriority="high" decoding="async">
+              <figcaption>{{PROJECT_TITLE}} · {{PROJECT_STATUS}}</figcaption>
+            </figure>
+          </div>
+
+          <dl class="project-meta reveal">
+            <div>
+              <dt>Role</dt>
+              <dd>{{PROJECT_ROLE}}</dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd>{{PROJECT_TIMELINE}}</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>{{PROJECT_TEAM}}</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>{{PROJECT_STATUS}}</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="container">
+        {{PROJECT_DEMO_NOTE}}
+      </div>
+
+      <section class="section" aria-labelledby="overview-title">
+        <div class="container project-layout">
+          <div class="project-main">
+            <div class="project-section reveal">
+              <p class="eyebrow">01 — Context</p>
+              <h2 id="overview-title">The challenge</h2>
+              <p class="project-description">{{PROJECT_DESCRIPTION}}</p>
+              <p>{{PROJECT_CHALLENGE}}</p>
+            </div>
+
+            <div class="project-section reveal">
+              <p class="eyebrow">02 — Approach</p>
+              <h2>The solution</h2>
+              <p>{{PROJECT_SOLUTION}}</p>
+            </div>
+
+            <div class="project-section reveal">
+              <p class="eyebrow">03 — Build</p>
+              <h2>What I built</h2>
+              <div class="feature-grid">
+                {{PROJECT_FEATURES}}
+              </div>
+            </div>
+
+            <div class="project-section reveal">
+              <p class="eyebrow">04 — Result</p>
+              <h2>What the build demonstrates</h2>
+              <ul class="check-list project-outcomes">
+                {{PROJECT_OUTCOMES}}
+              </ul>
+              <blockquote class="inline-quote project-reflection">
+                <p>“{{PROJECT_REFLECTION}}”</p>
+                <cite>Project reflection</cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <aside class="project-sidebar">
+            <div class="sidebar-card reveal">
+              <p class="eyebrow">Stack</p>
+              <h2 class="sidebar-title">Tools used</h2>
+              {{PROJECT_STACK_TAGS}}
+            </div>
+
+            <div class="sidebar-card reveal">
+              <p class="eyebrow">About this study</p>
+              <h2 class="sidebar-title">{{PROJECT_STATUS}}</h2>
+              <p>This case study follows the decisions behind the build rather than presenting a client result. The project is a demonstration concept unless stated otherwise.</p>
+              <a class="text-link" href="projects.html">Back to all projects <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            </div>
+
+            <div class="sidebar-card sidebar-card-accent reveal">
+              <h2 class="sidebar-title">Building something similar?</h2>
+              <p>Bring the problem, the constraints and a rough idea of the timing. I'll help you find the simplest useful next step.</p>
+              <a class="btn btn-primary btn-sm" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-tinted" aria-label="Project navigation">
+        <div class="container">
+          {{PROJECT_PAGER}}
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-copy">
+              <p class="eyebrow">Next step</p>
+              <h2 id="cta-title">Have a project like this in mind?</h2>
+              <p>Tell me what you're trying to make. I'll reply with an honest view of the work and the next useful step.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-light" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="btn btn-ghost-light" href="projects.html">Browse more work <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "brand": {
+    "logo": "John",
+    "suffix": ".",
+    "name": "John Anderson",
+    "shortName": "John",
+    "role": "Full-Stack Developer",
+    "initials": "JA"
+  },
+  "site": {
+    "url": "https://johnanderson.dev",
+    "locale": "en_US",
+    "language": "en",
+    "title": "John Anderson — Full-Stack Developer",
+    "description": "Full-stack developer specialising in React, Node.js and cloud-native product delivery. Explore selected projects, services, skills and writing.",
+    "themeColor": {
+      "light": "#4F46E5",
+      "dark": "#0B0B10"
+    },
+    "backgroundColor": "#F7F7FB"
+  },
+  "owner": {
+    "name": "John Anderson",
+    "firstName": "John",
+    "role": "Full-Stack Developer",
+    "tagline": "I build fast, accessible digital products that feel effortless.",
+    "location": {
+      "city": "San Francisco",
+      "region": "California",
+      "regionCode": "CA",
+      "country": "United States",
+      "countryCode": "US",
+      "display": "San Francisco, CA",
+      "timezone": "Pacific Time (PT)"
+    },
+    "email": "john@example.com",
+    "phone": "+1 (555) 123-4567",
+    "phoneHref": "+15551234567",
+    "availability": "Open to select projects",
+    "availabilityNote": "Remote-friendly · San Francisco, CA",
+    "photo": "assets/images/john-anderson.jpg",
+    "photoAlt": "Portrait of John Anderson",
+    "yearsExperience": 5,
+    "resume": "resume.html",
+    "bioShort": "I'm a full-stack developer with 5+ years of experience turning complex product ideas into clear, reliable web experiences.",
+    "bioLong": [
+      "With over five years of experience in web development, I've helped product teams build and scale digital experiences from first sketch to production. My work sits where thoughtful interface design meets dependable engineering.",
+      "I specialise in JavaScript technologies across the stack and have professional experience working with React, Node.js and modern cloud infrastructure. I care about the details that users feel: fast pages, obvious interactions, resilient systems and accessible flows."
+    ]
+  },
+  "social": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/",
+      "icon": "github",
+      "handle": "@johnanderson",
+      "demo": true
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/",
+      "icon": "linkedin",
+      "handle": "in/johnanderson",
+      "demo": true
+    },
+    {
+      "label": "X (Twitter)",
+      "url": "https://x.com/",
+      "icon": "x",
+      "handle": "@johnanderson",
+      "demo": true
+    }
+  ],
+  "contact": {
+    "responseTime": "Usually within 1–2 business days",
+    "form": {
+      "endpoint": "",
+      "method": "POST",
+      "mailto": "john@example.com",
+      "subjectPrefix": "Portfolio enquiry"
+    },
+    "map": {
+      "label": "San Francisco, California",
+      "url": "https://www.openstreetmap.org/?mlat=37.7749&mlon=-122.4194#map=12/37.7749/-122.4194"
+    }
+  },
+  "footer": {
+    "blurb": "Building thoughtful digital products from San Francisco — for teams and ideas worth shipping.",
+    "demoNote": "Portfolio demo: project, testimonial and experience details are illustrative. Replace them with verified information before publishing.",
+    "credit": "Designed and built with care."
+  },
+  "features": {
+    "themeToggle": true,
+    "preloader": true,
+    "scrollProgress": true
+  },
+  "analytics": {
+    "provider": null,
+    "id": null
+  }
+}

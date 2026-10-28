@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Anderson — Writing</title>
+    <link>https://johnanderson.dev/blog.html</link>
+    <description>Full-stack developer specialising in React, Node.js and cloud-native product delivery. Explore selected projects, services, skills and writing.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Feb 2026 09:00:00 GMT</lastBuildDate>
+    <atom:link href="https://johnanderson.dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Design systems that stay small</title>
+      <link>https://johnanderson.dev/blog-design-systems-that-stay-small.html</link>
+      <guid isPermaLink="true">https://johnanderson.dev/blog-design-systems-that-stay-small.html</guid>
+      <pubDate>Wed, 18 Feb 2026 09:00:00 GMT</pubDate>
+      <category>Design engineering</category>
+      <description>A design system earns its keep when it removes decisions, not when it collects components. Here is the small-system approach I keep coming back to.</description>
+    </item>
+    <item>
+      <title>A practical performance budget for content sites</title>
+      <link>https://johnanderson.dev/blog-performance-budget.html</link>
+      <guid isPermaLink="true">https://johnanderson.dev/blog-performance-budget.html</guid>
+      <pubDate>Tue, 27 Jan 2026 09:00:00 GMT</pubDate>
+      <category>Performance</category>
+      <description>Performance budgets work best when they are attached to user experience, not just numbers. A lightweight approach for content-led sites.</description>
+    </item>
+    <item>
+      <title>An API design checklist I actually use</title>
+      <link>https://johnanderson.dev/blog-api-checklist.html</link>
+      <guid isPermaLink="true">https://johnanderson.dev/blog-api-checklist.html</guid>
+      <pubDate>Thu, 08 Jan 2026 09:00:00 GMT</pubDate>
+      <category>Engineering</category>
+      <description>A short, practical checklist for APIs that are pleasant to consume, predictable to debug and safe to change.</description>
+    </item>
+  </channel>
+</rss>

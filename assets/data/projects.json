@@ -1,0 +1,201 @@
+{
+  "intro": "A small collection of product work. The first three case studies are illustrative demos created to show how I approach interface design and engineering; the final entry is this website.",
+  "projects": [
+    {
+      "slug": "pulse-analytics",
+      "output": "project-pulse-analytics.html",
+      "title": "Pulse — Analytics Dashboard",
+      "cardTitle": "Pulse Analytics",
+      "category": "Web app",
+      "filter": "web-app",
+      "year": "2025",
+      "role": "Lead full-stack developer",
+      "timeline": "12-week concept sprint",
+      "team": "Product concept, solo build",
+      "status": "Demo case study",
+      "featured": true,
+      "demo": true,
+      "image": "assets/images/project-analytics.jpg",
+      "imageAlt": "Dark analytics dashboard with traffic charts, KPIs and funnel visualisations",
+      "summary": "A real-time analytics workspace that turns dense product data into clear, confident decisions.",
+      "description": "A focused analytics dashboard concept built around a question product teams ask every day: what changed, why, and what should we do next? The interface pairs a calm visual system with fast, keyboard-friendly exploration.",
+      "challenge": "Product teams often collect more data than they can use. Exports pile up, metrics live in different tools, and the numbers that matter are buried under noise. The concept brief was to design a single workspace where a product team could scan performance, investigate a change, and leave with a next action.",
+      "solution": "I shaped the experience around three layers: a live overview, a focused investigation view, and a lightweight notes layer for decisions. The build uses a small set of reusable chart and card primitives, a shared data contract, and URL-driven filters so every useful view can be shared or bookmarked.",
+      "outcomes": [
+        "A dashboard that stays readable across dense time-series data.",
+        "Reusable chart primitives instead of one-off screens.",
+        "Shareable filter state with sensible defaults and empty states.",
+        "A responsive layout that keeps primary actions within reach."
+      ],
+      "features": [
+        {
+          "title": "Live overview",
+          "description": "Configurable KPI cards with trend context and a compact activity stream."
+        },
+        {
+          "title": "Investigation view",
+          "description": "Filterable time-series charts, cohort comparisons and drill-down panels."
+        },
+        {
+          "title": "Decision notes",
+          "description": "A lightweight layer for capturing what the team learned and what happens next."
+        },
+        {
+          "title": "Shareable state",
+          "description": "URL-driven filters make every view reproducible and easy to discuss."
+        }
+      ],
+      "reflection": "The most useful design constraint was refusing to show every available metric at once. The dashboard earns its space by making the next question obvious, not by displaying more data.",
+      "stack": ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL", "Redis"],
+      "links": [],
+      "demoNote": "Illustrative case study. This project is a demonstration concept, not a client engagement."
+    },
+    {
+      "slug": "nook-commerce",
+      "output": "project-nook-commerce.html",
+      "title": "Nook — Mobile Commerce",
+      "cardTitle": "Nook Commerce",
+      "category": "Mobile",
+      "filter": "mobile",
+      "year": "2025",
+      "role": "Product design & frontend",
+      "timeline": "8-week concept sprint",
+      "team": "Mobile concept, solo build",
+      "status": "Demo case study",
+      "featured": true,
+      "demo": true,
+      "image": "assets/images/project-commerce.jpg",
+      "imageAlt": "Three mobile commerce screens with product discovery, product detail and checkout flows",
+      "summary": "A mobile-first storefront concept built around fast browsing, clear product stories and a frictionless path to checkout.",
+      "description": "Nook is a mobile commerce concept that treats the phone as the primary shopping surface. Instead of compressing a desktop catalogue into a smaller screen, the experience is organised around short, tactile product moments and a checkout that never loses context.",
+      "challenge": "Mobile shoppers abandon when a storefront feels slow, crowded or uncertain. The brief was to explore a shopping flow that feels calm and quick at the same time: easy to browse, easy to understand, and easy to finish.",
+      "solution": "The concept uses a small set of strong product cards, sticky context for the current category, and a checkout that keeps the order summary visible without taking over the screen. Skeleton states and optimistic interactions keep the experience responsive on slower connections.",
+      "outcomes": [
+        "A browsing flow that works comfortably with one hand.",
+        "Product cards with room for material, fit and price context.",
+        "A persistent checkout summary that reduces uncertainty.",
+        "Clear loading, empty and error states at every step."
+      ],
+      "features": [
+        {
+          "title": "Editorial product cards",
+          "description": "A flexible card system for products, collections and seasonal edits."
+        },
+        {
+          "title": "Quick-add flow",
+          "description": "Size and colour selection without leaving the browsing context."
+        },
+        {
+          "title": "Calm checkout",
+          "description": "A short, focused flow with a persistent order summary."
+        },
+        {
+          "title": "Resilient states",
+          "description": "Skeletons, retries and helpful empty states instead of blank screens."
+        }
+      ],
+      "reflection": "Mobile commerce is mostly a rhythm problem. The interface needs to move quickly, but every transition still needs to tell the shopper what just happened and what comes next.",
+      "stack": ["React Native", "Expo", "TypeScript", "Stripe", "Node.js"],
+      "links": [],
+      "demoNote": "Illustrative case study. This project is a demonstration concept, not a client engagement."
+    },
+    {
+      "slug": "circle-community",
+      "output": "project-circle-community.html",
+      "title": "Circle — Community Platform",
+      "cardTitle": "Circle Community",
+      "category": "Web platform",
+      "filter": "platform",
+      "year": "2024",
+      "role": "Full-stack developer",
+      "timeline": "10-week concept sprint",
+      "team": "Platform concept, solo build",
+      "status": "Demo case study",
+      "featured": true,
+      "demo": true,
+      "image": "assets/images/project-social.jpg",
+      "imageAlt": "Three violet community app screens showing profiles, feed and messaging",
+      "summary": "A full-stack community concept with real-time feeds, direct messages and moderation tools that stay out of the way.",
+      "description": "Circle explores what a smaller, more intentional social product could feel like. The concept combines a calm feed, lightweight profiles and real-time conversations with a moderation model designed for small communities rather than public virality.",
+      "challenge": "Community products have to balance expression, safety and attention. Most tools optimise for engagement at all costs. This concept asked a different question: what would a community platform look like if it respected members' time and gave moderators clear, humane controls?",
+      "solution": "I designed a feed with deliberate pacing, a conversation model that keeps threads readable, and a moderation queue that surfaces context before action. The backend uses an event-driven approach with WebSockets for presence and messages, plus a small set of guardrails for spam and repeated reports.",
+      "outcomes": [
+        "A feed designed for slower, more intentional participation.",
+        "Threaded conversations that remain readable on mobile.",
+        "Moderation tools with context, not just a delete button.",
+        "Real-time interactions with sensible offline fallbacks."
+      ],
+      "features": [
+        {
+          "title": "Intentional feed",
+          "description": "Chronological by default, with category filters instead of an engagement algorithm."
+        },
+        {
+          "title": "Real-time conversations",
+          "description": "Presence, typing states and message delivery updates over WebSockets."
+        },
+        {
+          "title": "Moderation workspace",
+          "description": "A queue that shows the surrounding conversation and prior reports."
+        },
+        {
+          "title": "Small-community profiles",
+          "description": "Simple member pages focused on contribution rather than follower counts."
+        }
+      ],
+      "reflection": "Real-time features are easy to add and hard to make calm. The best version of Circle was the one where the interface told you only what you needed to know, when you needed to know it.",
+      "stack": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Redis", "WebSockets"],
+      "links": [],
+      "demoNote": "Illustrative case study. This project is a demonstration concept, not a client engagement."
+    },
+    {
+      "slug": "portfolio-website",
+      "output": "project-portfolio-website.html",
+      "title": "John Anderson — Portfolio Website",
+      "cardTitle": "Portfolio Website",
+      "category": "Web",
+      "filter": "web",
+      "year": "2026",
+      "role": "Design & development",
+      "timeline": "Ongoing",
+      "team": "Solo build",
+      "status": "Live build",
+      "featured": false,
+      "demo": false,
+      "image": "assets/images/project-portfolio.svg",
+      "imageAlt": "Abstract illustration of a portfolio website with a browser window and design elements",
+      "summary": "This multi-page portfolio: metadata-first, accessible, fast by default and built with a small static toolchain.",
+      "description": "The site you are reading is itself a case study. It is a static, multi-page portfolio with shared components, data-driven content, generated metadata, dark mode and a deliberately small JavaScript footprint.",
+      "challenge": "A portfolio needs to be easy to update, quick to load and useful to both people and search engines. It also needs to feel like a designed object rather than a collection of disconnected pages.",
+      "solution": "Each page is a standalone HTML document. Content lives in JSON, shared components live in partials, and a Node build script assembles the pages, injects SEO metadata and creates a sitemap and RSS feed. Runtime JavaScript only handles behaviour: navigation, theme, animation, filtering and form feedback.",
+      "outcomes": [
+        "Fully rendered pages with metadata in the initial HTML response.",
+        "A single source of truth for navigation, content and SEO.",
+        "Accessible navigation, forms and reduced-motion support.",
+        "No frontend framework or runtime CSS dependency."
+      ],
+      "features": [
+        {
+          "title": "Static by design",
+          "description": "Every route is a real HTML file that can be served from any static host."
+        },
+        {
+          "title": "Metadata pipeline",
+          "description": "SEO, Open Graph, Twitter cards and JSON-LD are generated from one JSON file."
+        },
+        {
+          "title": "Theme system",
+          "description": "A light and dark theme driven by CSS custom properties and a saved preference."
+        },
+        {
+          "title": "Small runtime",
+          "description": "Vanilla JavaScript modules for navigation, animation and form validation."
+        }
+      ],
+      "reflection": "The useful constraint was to keep the build simple enough to understand in an afternoon. A portfolio should demonstrate judgement, and the architecture is part of the argument.",
+      "stack": ["HTML", "CSS", "JavaScript", "Node.js", "JSON"],
+      "links": [],
+      "demoNote": "This page describes the build you are currently viewing."
+    }
+  ]
+}

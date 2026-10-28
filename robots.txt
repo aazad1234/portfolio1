@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://johnanderson.dev/sitemap.xml

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="blog" class="page-blog">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="blog-title">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <!-- @breadcrumbs:Home|index.html;Blog -->
+        <div class="page-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Writing</p>
+            <h1 class="page-title" id="blog-title">Notes from the build.</h1>
+            <p class="page-lede">{{BLOG_INTRO}}</p>
+          </div>
+          <div class="page-hero-meta reveal">
+            <a class="rss-link" href="feed.xml">
+              <span class="rss-link-icon"><svg class="icon" aria-hidden="true"><use href="#icon-rss"></use></svg></span>
+              <span>
+                <strong>Follow the feed</strong>
+                <small>RSS · no email required</small>
+              </span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section-head section-head-compact">
+          <div>
+            <p class="eyebrow">Latest articles</p>
+            <h2 class="section-title" id="articles-title">Recent notes</h2>
+          </div>
+        </div>
+
+        <div class="filter-bar" data-blog-filter-root>
+          <div class="filter-buttons" role="group" aria-label="Filter articles by category">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design engineering</button>
+            <button class="filter-button" type="button" data-filter="performance" aria-pressed="false">Performance</button>
+            <button class="filter-button" type="button" data-filter="engineering" aria-pressed="false">Engineering</button>
+          </div>
+          <p class="filter-count" data-filter-count aria-live="polite">Showing all articles</p>
+        </div>
+
+        <!-- @render:blog-listing -->
+
+        <div class="empty-state" data-empty-state hidden>
+          <span class="empty-state-icon"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg></span>
+          <h2>No articles in this category</h2>
+          <p>Try another filter or browse everything.</p>
+          <button class="btn btn-ghost" type="button" data-filter-reset>Show all articles</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="topics-title">
+      <div class="container split-grid">
+        <div class="reveal">
+          <p class="eyebrow">Topics</p>
+          <h2 class="section-title" id="topics-title">A running notebook.</h2>
+          <p class="section-lede">Most of these notes start as project decisions: a pattern that worked, a trade-off worth remembering, or a small tool that removed friction.</p>
+        </div>
+        <div class="reveal">
+          <ul class="topic-list">
+            <li><span>01</span> Design systems and interface architecture</li>
+            <li><span>02</span> Performance and accessibility</li>
+            <li><span>03</span> API and backend design</li>
+            <li><span>04</span> The practical side of product delivery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-copy">
+            <p class="eyebrow">Next step</p>
+            <h2 id="cta-title">Have a problem worth writing about?</h2>
+            <p>I'm always interested in the details behind a build. If you're working through one, let's compare notes.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+            <a class="btn btn-ghost-light" href="feed.xml">Subscribe via RSS <svg class="icon" aria-hidden="true"><use href="#icon-rss"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

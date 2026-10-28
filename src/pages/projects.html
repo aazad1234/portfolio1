@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="projects" class="page-projects">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="projects-title">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <!-- @breadcrumbs:Home|index.html;Projects -->
+        <div class="page-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Selected work</p>
+            <h1 class="page-title" id="projects-title">Built to make the complex feel clear.</h1>
+            <p class="page-lede">A small collection of product case studies. Each one starts with a real interface problem and follows the decisions through to a working build.</p>
+          </div>
+          <div class="page-hero-meta reveal">
+            <span class="meta-chip">4 projects</span>
+            <span class="meta-chip">Web · Mobile · Platforms</span>
+            <span class="meta-chip">Demo case studies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="project-list-title">
+      <div class="container">
+        <!-- @render:projects-demo-note -->
+
+        <div class="section-head section-head-compact">
+          <div>
+            <p class="eyebrow">Project archive</p>
+            <h2 class="section-title" id="project-list-title">Case studies</h2>
+          </div>
+        </div>
+
+        <div class="filter-bar" data-project-filter-root>
+          <div class="filter-buttons" role="group" aria-label="Filter projects by category">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="web-app" aria-pressed="false">Web apps</button>
+            <button class="filter-button" type="button" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button class="filter-button" type="button" data-filter="platform" aria-pressed="false">Platforms</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+          </div>
+          <p class="filter-count" data-filter-count aria-live="polite">Showing all projects</p>
+        </div>
+
+        <!-- @render:projects-grid -->
+
+        <div class="empty-state" data-empty-state hidden>
+          <span class="empty-state-icon"><svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg></span>
+          <h2>No projects in this category</h2>
+          <p>Try another filter or browse the full archive.</p>
+          <button class="btn btn-ghost" type="button" data-filter-reset>Show all projects</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Behind the work</p>
+            <h2 class="section-title" id="process-title">The same calm process, every time.</h2>
+          </div>
+          <a class="section-link" href="services.html">How I can help <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+        </div>
+        <!-- @render:process -->
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-copy">
+            <p class="eyebrow">Your project</p>
+            <h2 id="cta-title">What are you trying to build?</h2>
+            <p>Case studies are only useful if they help you imagine your own product. Tell me where you're starting from.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+            <a class="btn btn-ghost-light" href="services.html">Explore services <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

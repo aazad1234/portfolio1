@@ -1,0 +1,123 @@
+{
+  "intro": "I work with small product teams and independent founders who need a thoughtful builder — someone who can move between interface design, application logic and the details that make a release feel finished.",
+  "services": [
+    {
+      "id": "product-development",
+      "icon": "code2",
+      "title": "Full-stack product development",
+      "tagline": "From first flow to production",
+      "description": "End-to-end delivery for web products: interface implementation, application logic, API integration, testing and launch support. Best for a focused first release or a well-defined product slice.",
+      "deliverables": [
+        "Product and flow discovery",
+        "Frontend and backend implementation",
+        "Responsive, accessible UI",
+        "Deployment and handover"
+      ],
+      "bestFor": "Teams with a clear product idea and a need for one accountable builder.",
+      "engagement": "Project-based"
+    },
+    {
+      "id": "frontend-systems",
+      "icon": "layout",
+      "title": "Frontend engineering & design systems",
+      "tagline": "Interfaces that scale with the product",
+      "description": "A focused frontend engagement: building reusable components, clarifying design tokens and giving a growing product a UI foundation that stays consistent as more people contribute.",
+      "deliverables": [
+        "Component inventory and audit",
+        "Design token implementation",
+        "Accessible component library",
+        "Usage documentation"
+      ],
+      "bestFor": "Products whose interface has outgrown its original CSS or component patterns.",
+      "engagement": "Sprint or embedded"
+    },
+    {
+      "id": "backend-apis",
+      "icon": "server",
+      "title": "APIs & backend systems",
+      "tagline": "Clear contracts, dependable services",
+      "description": "Design and implementation of Node.js services and data models with understandable APIs, solid validation, sensible error states and a practical testing baseline.",
+      "deliverables": [
+        "API and data model design",
+        "Authentication and validation",
+        "Background jobs and integrations",
+        "Tests and operational notes"
+      ],
+      "bestFor": "Teams adding a service layer or untangling an API that has become hard to change.",
+      "engagement": "Project-based"
+    },
+    {
+      "id": "audits",
+      "icon": "gauge",
+      "title": "Performance, accessibility & SEO audits",
+      "tagline": "Find the friction, fix what matters",
+      "description": "A practical review of the things users and search engines feel: loading performance, core interactions, keyboard access, semantics and metadata. You get prioritised findings and implementation guidance.",
+      "deliverables": [
+        "Performance measurements",
+        "Accessibility review",
+        "Technical SEO checks",
+        "Prioritised action plan"
+      ],
+      "bestFor": "Teams that know something feels slow or difficult to use, but need a clear place to start.",
+      "engagement": "Audit & roadmap"
+    }
+  ],
+  "process": [
+    {
+      "number": "01",
+      "title": "Discover",
+      "description": "Clarify the goal, the constraints and the people the product is for. We agree on what success looks like before building."
+    },
+    {
+      "number": "02",
+      "title": "Define",
+      "description": "Map the core flows, content and system boundaries. I turn the brief into a scoped plan with visible assumptions."
+    },
+    {
+      "number": "03",
+      "title": "Build",
+      "description": "Work in small, reviewable slices with working previews. Quality checks happen alongside the build, not after it."
+    },
+    {
+      "number": "04",
+      "title": "Launch & refine",
+      "description": "Ship with the right documentation and a short feedback loop. We fix what the real world reveals."
+    }
+  ],
+  "engagements": [
+    {
+      "title": "Project sprint",
+      "description": "A defined scope delivered over a short, focused engagement. Good for a launch, a new feature or a product concept that needs to become real."
+    },
+    {
+      "title": "Embedded support",
+      "description": "Ongoing collaboration with your existing team, with a regular cadence and a clear area of ownership. Good for products that are already moving."
+    },
+    {
+      "title": "Audit & roadmap",
+      "description": "A structured review followed by a prioritised plan your team can execute, with optional follow-up support."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What kinds of projects are a good fit?",
+      "answer": "Product teams that need a full-stack builder who cares about design quality, accessibility and maintainability. Web applications, internal tools, marketing sites with custom interactions and focused product experiments are all a good fit."
+    },
+    {
+      "question": "Do you work with existing teams?",
+      "answer": "Yes. I can join an existing workflow, work alongside designers and engineers, and adapt to the tools and conventions the team already uses. Clear ownership and regular communication matter more than a particular process."
+    },
+    {
+      "question": "How do you handle timelines?",
+      "answer": "I scope work in small slices, communicate assumptions early and keep a visible sequence of deliverables. After a short discovery conversation, I can propose a realistic plan with milestones and checkpoints."
+    },
+    {
+      "question": "Can you work remotely?",
+      "answer": "Yes. I work remotely with teams across time zones and am based in Pacific Time. I keep communication asynchronous by default and schedule working sessions when they are useful."
+    },
+    {
+      "question": "What happens after launch?",
+      "answer": "You receive the implementation, setup notes and a handover. If you want ongoing support, we can agree on a follow-up window or a lighter maintenance arrangement."
+    }
+  ]
+}

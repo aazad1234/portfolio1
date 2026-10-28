@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="about" class="page-about">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="about-title">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <!-- @breadcrumbs:Home|index.html;About -->
+        <div class="page-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">About me</p>
+            <h1 class="page-title" id="about-title">A developer with a designer's eye.</h1>
+            <p class="page-lede">I like the part of product work where a vague idea becomes a clear, reliable experience. That usually means asking better questions, simplifying the interface and writing code that the next person can keep moving.</p>
+          </div>
+          <div class="page-hero-facts reveal">
+            <div class="fact-card">
+              <span class="fact-label">Based in</span>
+              <strong>{{LOCATION_DISPLAY}}</strong>
+              <span>{{LOCATION_TIMEZONE}}</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Experience</span>
+              <strong>5+ years</strong>
+              <span>Product &amp; web development</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Focus</span>
+              <strong>Full-stack</strong>
+              <span>Frontend, APIs &amp; delivery</span>
+            </div>
+            <div class="fact-card fact-card-accent">
+              <span class="status-dot" aria-hidden="true"></span>
+              <strong>{{AVAILABILITY}}</strong>
+              <span>Remote-friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="container split-grid split-grid-about">
+        <div class="portrait-card reveal">
+          <img src="{{OWNER_PHOTO}}" alt="{{OWNER_PHOTO_ALT}}" width="512" height="512" loading="lazy" decoding="async">
+          <div class="portrait-card-caption">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>{{AVAILABILITY_NOTE}}</span>
+          </div>
+        </div>
+
+        <div class="prose-block reveal">
+          <p class="eyebrow">The short version</p>
+          <h2 id="story-title">Good software feels considered.</h2>
+          <p>{{OWNER_BIO_1}}</p>
+          <p>{{OWNER_BIO_2}}</p>
+          <blockquote class="inline-quote">
+            <p>“The best technical decision is usually the one that makes the product easier to understand.”</p>
+            <cite>John Anderson</cite>
+          </blockquote>
+          <div class="signature">
+            <span class="signature-mark">John.</span>
+            <span>{{OWNER_ROLE}}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Working principles</p>
+            <h2 class="section-title" id="principles-title">What I keep coming back to.</h2>
+          </div>
+          <p class="section-side">Not a manifesto — just the defaults that keep the work honest.</p>
+        </div>
+        <!-- @render:principles -->
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="capabilities-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Capabilities</p>
+            <h2 class="section-title" id="capabilities-title">Where I can be most useful.</h2>
+          </div>
+          <a class="section-link" href="skills.html">See the full toolkit <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+        </div>
+        <!-- @render:capabilities -->
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="experience-preview-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2 class="section-title" id="experience-preview-title">A working history.</h2>
+          </div>
+          <a class="section-link" href="experience.html">Full timeline <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+        </div>
+        <!-- @render:experience-preview -->
+        <p class="section-footnote">This is an illustrative career timeline. Replace it with your verified roles before publishing.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="learning-title">
+      <div class="container split-grid">
+        <div class="reveal">
+          <p class="eyebrow">Still learning</p>
+          <h2 class="section-title" id="learning-title">The work is always a little unfinished.</h2>
+          <p class="section-lede">A few areas I'm actively exploring, because the tools and expectations around the web keep moving.</p>
+        </div>
+        <div class="reveal">
+          <!-- @render:learning -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-copy">
+            <p class="eyebrow">Next step</p>
+            <h2 id="cta-title">Let's build something considered.</h2>
+            <p>If you have a product that needs clearer thinking or a stronger build, I'd like to hear about it.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+            <a class="btn btn-ghost-light" href="projects.html">Browse projects <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

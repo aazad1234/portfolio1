@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="contact" class="page-contact">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <!-- @breadcrumbs:Home|index.html;Contact -->
+        <div class="page-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h1 class="page-title" id="contact-title">Let's talk about what you're building.</h1>
+            <p class="page-lede">A short description is enough to start: what the product is, where it feels stuck and what a good outcome looks like. I reply personally.</p>
+            <div class="contact-quick">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>{{AVAILABILITY}}</span>
+              <span class="eyebrow-divider" aria-hidden="true">/</span>
+              <span>{{RESPONSE_TIME}}</span>
+            </div>
+          </div>
+          <div class="page-hero-panel reveal">
+            <p class="panel-eyebrow">Good fit conversations</p>
+            <ul class="panel-list">
+              <li><span>01</span> A new product or feature</li>
+              <li><span>02</span> A frontend or API rebuild</li>
+              <li><span>03</span> A performance or accessibility review</li>
+            </ul>
+            <p class="panel-note">If you're not sure which one fits, that's fine. We'll figure it out together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container contact-layout">
+        <div class="contact-form-wrap reveal">
+          <div class="section-head section-head-compact">
+            <div>
+              <p class="eyebrow">Send a message</p>
+              <h2 class="section-title" id="form-title">Tell me a little about it.</h2>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="mailto:{{OWNER_EMAIL}}" method="post" enctype="text/plain" data-contact-form data-endpoint="{{FORM_ENDPOINT}}" data-mailto="{{FORM_MAILTO}}" data-subject-prefix="{{FORM_SUBJECT_PREFIX}}" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="name-error">
+                <p class="field-error" id="name-error" data-error-for="name"></p>
+              </div>
+              <div class="form-field">
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <p class="field-error" id="email-error" data-error-for="email"></p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="company">Company <span class="optional">(optional)</span></label>
+                <input id="company" name="company" type="text" autocomplete="organization">
+              </div>
+              <div class="form-field">
+                <label for="subject">What can I help with?</label>
+                <select id="subject" name="subject">
+                  {{SERVICE_OPTIONS}}
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Project details <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" required minlength="20" aria-describedby="message-error message-hint"></textarea>
+              <p class="field-hint" id="message-hint">A little context is helpful — the goal, the current state and any timing constraints.</p>
+              <p class="field-error" id="message-error" data-error-for="message"></p>
+            </div>
+
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" data-submit-button>
+                <span data-submit-label>Send message</span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-send"></use></svg>
+              </button>
+              <button class="btn btn-ghost btn-copy" type="button" data-copy-email="{{OWNER_EMAIL}}">
+                <span data-copy-label>Copy email</span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-copy"></use></svg>
+              </button>
+            </div>
+
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            <p class="form-note">This is a static portfolio. Submissions open a pre-filled email in your email app unless a form endpoint is configured in the site configuration. No message data is stored on this site.</p>
+          </form>
+        </div>
+
+        <aside class="contact-side reveal" aria-labelledby="contact-details-title">
+          <div class="sidebar-card">
+            <p class="eyebrow">Contact details</p>
+            <h2 id="contact-details-title" class="sidebar-title">The direct route.</h2>
+            <!-- @render:contact-details -->
+            <ul class="social-list contact-social" aria-label="Social profiles">
+              {{SOCIAL_LINKS}}
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h2 class="sidebar-title">Based in {{LOCATION_CITY}}</h2>
+            <a class="map-card" href="{{MAP_URL}}" target="_blank" rel="noopener noreferrer" aria-label="Open {{MAP_LABEL}} in OpenStreetMap">
+              <img src="assets/images/map.svg" alt="Abstract street map illustration of San Francisco" width="800" height="500" loading="lazy" decoding="async">
+              <span class="map-card-label">
+                <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                {{LOCATION_DISPLAY}} <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+              </span>
+            </a>
+            <p class="sidebar-note">{{AVAILABILITY_NOTE}} · {{LOCATION_TIMEZONE}}</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="contact-faq-title">
+      <div class="container split-grid split-grid-faq">
+        <div class="reveal">
+          <p class="eyebrow">Before you write</p>
+          <h2 class="section-title" id="contact-faq-title">A few useful details.</h2>
+          <p class="section-lede">No formal brief required. These answers cover the most common starting questions.</p>
+        </div>
+        <div class="reveal">
+          <!-- @render:faqs -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>

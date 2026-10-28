@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract map of San Francisco</title>
+  <desc id="desc">A stylised street map with blocks, a park, the waterfront and a location marker.</desc>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="170" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C7E6F7"/>
+      <stop offset="1" stop-color="#AFD8EF"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="410" y1="180" x2="470" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="pinShadow" x="-60%" y="-40%" width="220%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#2E258C" flood-opacity=".35"/>
+    </filter>
+    <pattern id="blocks" width="34" height="34" patternUnits="userSpaceOnUse">
+      <rect width="26" height="26" rx="3" fill="#E6EAF2"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="#F0F3F8"/>
+  <path d="M0 0h154c-22 46-18 92-6 130 12 40-4 76-28 108-24 32-28 76-18 116 8 34 24 70 16 146H0z" fill="url(#water)"/>
+  <path d="M154 0c-22 46-18 92-6 130 12 40-4 76-28 108-24 32-28 76-18 116 8 34 24 70 16 146" fill="none" stroke="#9CCAE5" stroke-width="3"/>
+
+  <g opacity=".85">
+    <rect x="178" y="32" width="108" height="68" rx="5" fill="#E5EAF2"/>
+    <rect x="306" y="32" width="132" height="68" rx="5" fill="#E5EAF2"/>
+    <rect x="458" y="32" width="94" height="68" rx="5" fill="#E5EAF2"/>
+    <rect x="572" y="32" width="198" height="68" rx="5" fill="#E5EAF2"/>
+    <rect x="178" y="122" width="86" height="88" rx="5" fill="#E5EAF2"/>
+    <rect x="284" y="122" width="154" height="88" rx="5" fill="#E5EAF2"/>
+    <rect x="458" y="122" width="94" height="88" rx="5" fill="#E5EAF2"/>
+    <rect x="572" y="122" width="88" height="88" rx="5" fill="#E5EAF2"/>
+    <rect x="680" y="122" width="90" height="88" rx="5" fill="#E5EAF2"/>
+    <rect x="178" y="232" width="86" height="112" rx="5" fill="#E5EAF2"/>
+    <rect x="284" y="232" width="72" height="112" rx="5" fill="#E5EAF2"/>
+    <rect x="376" y="232" width="140" height="112" rx="5" fill="#E5EAF2"/>
+    <rect x="536" y="232" width="130" height="112" rx="5" fill="#E5EAF2"/>
+    <rect x="686" y="232" width="84" height="112" rx="5" fill="#E5EAF2"/>
+    <rect x="178" y="366" width="118" height="100" rx="5" fill="#E5EAF2"/>
+    <rect x="316" y="366" width="146" height="100" rx="5" fill="#E5EAF2"/>
+    <rect x="482" y="366" width="88" height="100" rx="5" fill="#E5EAF2"/>
+    <rect x="590" y="366" width="180" height="100" rx="5" fill="#E5EAF2"/>
+  </g>
+
+  <rect x="520" y="66" width="92" height="108" rx="12" fill="#BFE6D2"/>
+  <path d="M536 92c14-10 22 6 32-4 8-8 20-2 28 4v64c-12-7-20 3-32 0-12-3-16-11-28-6z" fill="#8DD0B0" opacity=".85"/>
+  <rect x="634" y="356" width="124" height="92" rx="10" fill="#C4E9D7"/>
+  <circle cx="670" cy="392" r="14" fill="#9CD9BC"/>
+  <circle cx="714" cy="414" r="20" fill="#9CD9BC"/>
+
+  <g stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M154 0v500" stroke-width="14"/>
+    <path d="M168 198c96-8 176-2 254 20 110 30 212 22 378-6" stroke-width="13"/>
+    <path d="M168 348c108 10 188 30 292 8 114-24 192-18 340 12" stroke-width="11"/>
+    <path d="M280 0c-8 110 2 204 16 290 10 60 6 134 0 210" stroke-width="10"/>
+    <path d="M454 0c-8 92-4 176 4 246 8 76 6 170 0 254" stroke-width="12"/>
+    <path d="M626 0c0 96 10 180 0 264-8 68-4 152 8 236" stroke-width="10"/>
+    <path d="M154 92h646M154 212h646M154 360h646M154 458h646" stroke-width="8" opacity=".9"/>
+    <path d="M348 0l100 500M728 0L642 500" stroke-width="7" opacity=".8"/>
+    <path d="M0 300c70-36 120-20 168 8" stroke-width="9"/>
+  </g>
+
+  <path d="M154 92c138 68 286 74 488 32 68-14 124-16 158-10" fill="none" stroke="#F6D58A" stroke-width="5" stroke-dasharray="10 7" opacity=".95"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#99A2B5" font-size="9" font-weight="600" letter-spacing="1.6">
+    <text x="690" y="318" transform="rotate(-86 690 318)">MARKET STREET</text>
+    <text x="474" y="282" transform="rotate(4 474 282)">MISSION STREET</text>
+    <text x="196" y="202" transform="rotate(-2 196 202)">BAY STREET</text>
+    <text x="520" y="500" transform="rotate(-3 520 500)">16TH STREET</text>
+  </g>
+
+  <g filter="url(#pinShadow)">
+    <path d="M430 290c0 0-34-38-34-68 0-20 15-36 34-36s34 16 34 36c0 30-34 68-34 68z" fill="url(#pin)"/>
+    <circle cx="430" cy="221" r="13" fill="#FFFFFF"/>
+    <circle cx="430" cy="221" r="6" fill="#4F46E5"/>
+  </g>
+  <ellipse cx="430" cy="297" rx="19" ry="6" fill="#4F46E5" opacity=".16"/>
+
+  <g transform="translate(447 282)">
+    <rect width="116" height="36" rx="9" fill="#17161F"/>
+    <text x="13" y="15" fill="#A5B4FC" font-family="Segoe UI, Arial, sans-serif" font-size="7" font-weight="700" letter-spacing="1">BASED IN</text>
+    <text x="13" y="28" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">San Francisco, CA</text>
+  </g>
+
+  <g opacity=".5">
+    <path d="M40 120c16-8 30-4 38 8M40 380c18 4 26 16 24 30" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M96 60c10 8 15 20 12 32M92 430c12-6 22-2 28 8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <rect x="0" y="0" width="800" height="500" fill="none" stroke="#DCE3EC" stroke-width="2"/>
+</svg>

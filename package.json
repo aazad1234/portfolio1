@@ -1,0 +1,23 @@
+{
+  "name": "john-anderson-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A responsive, accessible, SEO-first portfolio for John Anderson, built with dependency-free Node tooling.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/serve.js",
+    "serve": "node scripts/serve.js",
+    "seo": "node scripts/generate-seo.js",
+    "check": "node scripts/check.js",
+    "test": "node scripts/check.js"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site",
+    "accessibility",
+    "seo"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

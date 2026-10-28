@@ -1,0 +1,108 @@
+{
+  "disclaimer": "Proficiency levels are self-assessed and illustrative. Replace this data with your own honest skill levels before publishing.",
+  "capabilities": [
+    {
+      "icon": "layout",
+      "title": "Frontend engineering",
+      "description": "Accessible, responsive interfaces with a strong design system foundation and careful state management."
+    },
+    {
+      "icon": "server",
+      "title": "Backend & APIs",
+      "description": "Pragmatic Node.js services, clear data models and APIs that are easy for product teams to build on."
+    },
+    {
+      "icon": "gauge",
+      "title": "Performance & accessibility",
+      "description": "Faster pages and more inclusive flows, backed by measurable audits and practical fixes."
+    }
+  ],
+  "groups": [
+    {
+      "title": "Frontend engineering",
+      "icon": "layout",
+      "description": "Building interfaces that stay fast, accessible and maintainable as products grow.",
+      "skills": [
+        { "name": "React", "level": 92 },
+        { "name": "TypeScript", "level": 90 },
+        { "name": "Next.js", "level": 86 },
+        { "name": "CSS & design systems", "level": 91 },
+        { "name": "Web accessibility", "level": 88 }
+      ]
+    },
+    {
+      "title": "Backend & data",
+      "icon": "server",
+      "description": "Designing services and data models that are understandable, testable and dependable.",
+      "skills": [
+        { "name": "Node.js", "level": 89 },
+        { "name": "PostgreSQL", "level": 84 },
+        { "name": "MongoDB", "level": 82 },
+        { "name": "REST & GraphQL", "level": 85 },
+        { "name": "Automated testing", "level": 80 }
+      ]
+    },
+    {
+      "title": "Cloud & delivery",
+      "icon": "cloud",
+      "description": "Shipping and operating software with sensible automation, observability and cost awareness.",
+      "skills": [
+        { "name": "AWS", "level": 78 },
+        { "name": "Docker", "level": 80 },
+        { "name": "CI/CD", "level": 82 },
+        { "name": "Web performance", "level": 86 },
+        { "name": "Observability", "level": 74 }
+      ]
+    },
+    {
+      "title": "Product craft",
+      "icon": "compass",
+      "description": "Working closely with product and design to turn ambiguity into a clear, shippable plan.",
+      "skills": [
+        { "name": "UI/UX design", "level": 78 },
+        { "name": "Figma", "level": 80 },
+        { "name": "Prototyping", "level": 76 },
+        { "name": "Technical writing", "level": 88 },
+        { "name": "Collaboration", "level": 90 }
+      ]
+    }
+  ],
+  "tools": [
+    { "name": "React", "icon": "code" },
+    { "name": "TypeScript", "icon": "code" },
+    { "name": "Next.js", "icon": "layers" },
+    { "name": "Node.js", "icon": "server" },
+    { "name": "PostgreSQL", "icon": "database" },
+    { "name": "MongoDB", "icon": "database" },
+    { "name": "Tailwind CSS", "icon": "layout" },
+    { "name": "Figma", "icon": "pen" },
+    { "name": "Docker", "icon": "box" },
+    { "name": "AWS", "icon": "cloud" },
+    { "name": "Git", "icon": "git" },
+    { "name": "Playwright", "icon": "test" }
+  ],
+  "principles": [
+    {
+      "title": "Clarity over cleverness",
+      "description": "The simplest solution that the next developer can understand is usually the right one."
+    },
+    {
+      "title": "Fast is a feature",
+      "description": "Performance is part of the experience. I treat speed as a product requirement, not a cleanup task."
+    },
+    {
+      "title": "Accessible by default",
+      "description": "Keyboard access, clear focus states and honest semantics belong in the first build, not the last."
+    },
+    {
+      "title": "Ship, learn, refine",
+      "description": "Small, measurable releases beat large speculative launches. Feedback is part of the architecture."
+    }
+  ],
+  "learning": [
+    "Local-first application architecture",
+    "View Transitions API patterns",
+    "Design tokens across multiple platforms",
+    "Edge rendering and caching strategies"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "primary": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "id": "work",
+      "label": "Work",
+      "children": [
+        {
+          "id": "projects",
+          "label": "Projects",
+          "href": "projects.html",
+          "icon": "layers",
+          "description": "Selected case studies and product work."
+        },
+        {
+          "id": "services",
+          "label": "Services",
+          "href": "services.html",
+          "icon": "sparkles",
+          "description": "How I can help your team ship."
+        },
+        {
+          "id": "testimonials",
+          "label": "Testimonials",
+          "href": "testimonials.html",
+          "icon": "quote",
+          "description": "Illustrative collaboration feedback."
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "href": "skills.html"
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "href": "experience.html"
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "href": "blog.html"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "cta": {
+    "label": "Let's talk",
+    "href": "contact.html",
+    "icon": "arrow-up-right"
+  },
+  "footerGroups": [
+    {
+      "title": "Explore",
+      "links": [
+        { "label": "Home", "href": "index.html" },
+        { "label": "About", "href": "about.html" },
+        { "label": "Projects", "href": "projects.html" },
+        { "label": "Services", "href": "services.html" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Skills", "href": "skills.html" },
+        { "label": "Experience", "href": "experience.html" },
+        { "label": "Blog", "href": "blog.html" },
+        { "label": "Testimonials", "href": "testimonials.html" }
+      ]
+    },
+    {
+      "title": "Connect",
+      "links": [
+        { "label": "Contact", "href": "contact.html" },
+        { "label": "Résumé", "href": "resume.html" }
+      ]
+    }
+  ],
+  "footerLegal": [
+    { "label": "Sitemap", "href": "sitemap.xml" },
+    { "label": "RSS feed", "href": "feed.xml" }
+  ]
+}

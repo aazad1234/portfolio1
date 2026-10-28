@@ -1,0 +1,53 @@
+{
+  "disclaimer": "Illustrative sample testimonials. These quotes and identities are demonstration content, not verified client feedback. Replace them with real, permissioned testimonials before publishing.",
+  "items": [
+    {
+      "id": "sarah",
+      "name": "Sarah Johnson",
+      "role": "CEO",
+      "company": "TechStart (sample)",
+      "quote": "John delivered our project on time and exceeded our expectations. His attention to detail and technical expertise made him a valuable partner.",
+      "image": "assets/images/testimonial-sarah.jpg",
+      "imageAlt": "Portrait of Sarah Johnson",
+      "demo": true
+    },
+    {
+      "id": "michael",
+      "name": "Michael Chen",
+      "role": "CTO",
+      "company": "InnovateLab (sample)",
+      "quote": "Working with John was a great experience. His technical skills and problem-solving abilities helped us launch our product successfully.",
+      "image": "assets/images/testimonial-michael.jpg",
+      "imageAlt": "Portrait of Michael Chen",
+      "demo": true
+    },
+    {
+      "id": "david",
+      "name": "David Miller",
+      "role": "Founder",
+      "company": "DigitalFlow (sample)",
+      "quote": "John's expertise in full-stack development helped us create a robust and scalable solution. Highly recommended!",
+      "image": "assets/images/testimonial-david.jpg",
+      "imageAlt": "Portrait of David Miller",
+      "demo": true
+    }
+  ],
+  "collaboration": [
+    {
+      "title": "Clear communication",
+      "description": "Regular updates, visible decisions and no surprises about what is moving or blocked."
+    },
+    {
+      "title": "Thoughtful trade-offs",
+      "description": "A bias for shipping without pretending every shortcut is free. Scope and quality stay honest."
+    },
+    {
+      "title": "Shared context",
+      "description": "Documentation and handover are part of the work, so the next person can keep moving."
+    },
+    {
+      "title": "Calm delivery",
+      "description": "A steady rhythm, reviewable slices and room to respond when the product changes."
+    }
+  ]
+}

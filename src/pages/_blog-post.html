@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- @seo -->
+  <!-- @head-assets -->
+</head>
+<body data-page="blog" class="page-article">
+  <!-- @preloader -->
+  <!-- @header -->
+
+  <main id="main">
+    <article class="article-detail">
+      <header class="article-header">
+        <div class="article-header-glow" aria-hidden="true"></div>
+        <div class="container">
+          <!-- @breadcrumbs -->
+          <div class="article-kicker">
+            <span class="badge badge-soft">{{BLOG_CATEGORY}}</span>
+            <span>{{BLOG_READ_TIME}}</span>
+          </div>
+          <h1 class="article-title">{{BLOG_TITLE}}</h1>
+          <p class="article-excerpt">{{BLOG_EXCERPT}}</p>
+          <div class="article-byline">
+            <img src="{{OWNER_PHOTO}}" alt="{{OWNER_PHOTO_ALT}}" width="512" height="512" decoding="async">
+            <div>
+              <span class="article-byline-name">{{BLOG_AUTHOR}}</span>
+              <span class="article-byline-meta">
+                <time datetime="{{BLOG_DATE_ISO}}">{{BLOG_DATE_DISPLAY}}</time>
+                <span aria-hidden="true">·</span>
+                <span>{{BLOG_READ_TIME}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container article-cover">
+        <img src="{{BLOG_IMAGE}}" alt="{{BLOG_IMAGE_ALT}}" width="1200" height="630" fetchpriority="high" decoding="async">
+      </div>
+
+      <section class="section article-body" aria-label="Article content">
+        <div class="container article-layout">
+          <div class="prose article-prose">
+            {{BLOG_CONTENT}}
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card">
+              <p class="eyebrow">Share</p>
+              <h2 class="sidebar-title">Pass it on</h2>
+              <button class="btn btn-ghost btn-sm btn-full" type="button" data-share-button>
+                <span data-share-label>Share this article</span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-share"></use></svg>
+              </button>
+              <p class="share-status" data-share-status role="status" aria-live="polite"></p>
+            </div>
+
+            <div class="sidebar-card">
+              <p class="eyebrow">Tags</p>
+              <h2 class="sidebar-title">Filed under</h2>
+              {{BLOG_TAGS}}
+            </div>
+
+            <div class="sidebar-card sidebar-card-accent">
+              <h2 class="sidebar-title">Working on something?</h2>
+              <p>If this raised a question about your own build, I'm happy to talk it through.</p>
+              <a class="btn btn-primary btn-sm" href="contact.html">Get in touch <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section author-section" aria-label="About the author">
+        <div class="container">
+          <!-- @render:author-card -->
+        </div>
+      </section>
+
+      <section class="section section-tinted" aria-labelledby="related-title">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Keep reading</p>
+              <h2 class="section-title" id="related-title">More notes from the build.</h2>
+            </div>
+            <a class="section-link" href="blog.html">All writing <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+          </div>
+          {{BLOG_RELATED}}
+        </div>
+      </section>
+
+      <section class="section" aria-label="Article navigation">
+        <div class="container">
+          {{BLOG_PAGER}}
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-copy">
+              <p class="eyebrow">Next step</p>
+              <h2 id="cta-title">Let's talk about your build.</h2>
+              <p>Whether it's a new product, a stubborn frontend or an API that needs a clearer shape, I'd like to hear about it.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-light" href="contact.html">Start a conversation <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg></a>
+              <a class="btn btn-ghost-light" href="projects.html">Browse projects <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- @footer -->
+  <!-- @scroll-top -->
+  <!-- @scripts -->
+</body>
+</html>
