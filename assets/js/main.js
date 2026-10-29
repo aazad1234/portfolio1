@@ -162,4 +162,53 @@
   if (shareButton) {
     shareButton.addEventListener('click', sharePage);
   }
+
+  // Quick copy email pill
+  document.addEventListener('click', function (e) {
+    var copyBtn = e.target.closest('[data-copy-email]');
+    if (!copyBtn) return;
+    var email = copyBtn.getAttribute('data-copy-email') || 'john@example.com';
+    var textSpan = copyBtn.querySelector('.copy-email-text') || copyBtn;
+    var originalText = textSpan.getAttribute('data-original-text') || textSpan.textContent;
+    textSpan.setAttribute('data-original-text', originalText);
+
+    function onCopied() {
+      textSpan.textContent = 'Copied! ✓';
+      copyBtn.classList.add('is-copied');
+      window.setTimeout(function () {
+        textSpan.textContent = originalText;
+        copyBtn.classList.remove('is-copied');
+      }, 2200);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(onCopied).catch(function () {
+        fallbackCopy(email);
+        onCopied();
+      });
+    } else {
+      fallbackCopy(email);
+      onCopied();
+    }
+  });
+
+  // Live San Francisco clock
+  var clockEls = Array.prototype.slice.call(document.querySelectorAll('[data-sf-clock]'));
+  if (clockEls.length) {
+    function updateSfClock() {
+      try {
+        var timeStr = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'America/Los_Angeles',
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: true
+        }).format(new Date());
+        clockEls.forEach(function (el) {
+          el.textContent = timeStr + ' SF';
+        });
+      } catch (err) {}
+    }
+    updateSfClock();
+    window.setInterval(updateSfClock, 30000);
+  }
 })();

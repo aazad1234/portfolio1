@@ -3,59 +3,59 @@
   <desc id="desc">A browser window showing a calm portfolio website with an editorial hero, portrait and project cards.</desc>
   <defs>
     <linearGradient id="page" x1="90" y1="40" x2="1110" y2="860" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ECEBFF"/>
-      <stop offset=".48" stop-color="#F7F7FC"/>
-      <stop offset="1" stop-color="#EDF9F4"/>
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".48" stop-color="#FDFBF9"/>
+      <stop offset="1" stop-color="#F7F4F0"/>
     </linearGradient>
     <linearGradient id="accent" x1="710" y1="175" x2="1010" y2="470" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#4F46E5"/>
-      <stop offset=".56" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#10B981"/>
+      <stop offset="0" stop-color="#6B4C3B"/>
+      <stop offset=".56" stop-color="#8C6E5A"/>
+      <stop offset="1" stop-color="#C9954C"/>
     </linearGradient>
     <linearGradient id="soft" x1="140" y1="180" x2="580" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".92"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".56"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#FAF8F5" stop-opacity=".85"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
-      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#251F54" flood-opacity=".22"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2E1D13" flood-opacity=".16"/>
     </filter>
     <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="180%">
-      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#2C275B" flood-opacity=".12"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#2E1D13" flood-opacity=".09"/>
     </filter>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#4F46E5" stroke-opacity=".06"/>
+      <path d="M48 0H0V48" fill="none" stroke="#6B4C3B" stroke-opacity=".05"/>
     </pattern>
     <clipPath id="browserClip">
       <rect x="82" y="92" width="1036" height="716" rx="26"/>
     </clipPath>
     <clipPath id="portraitClip">
-      <circle cx="860" cy="319" r="138"/>
+      <circle cx="852" cy="340" r="138"/>
     </clipPath>
   </defs>
 
   <rect width="1200" height="900" fill="url(#page)"/>
-  <circle cx="110" cy="120" r="260" fill="#7C3AED" opacity=".08"/>
-  <circle cx="1090" cy="770" r="280" fill="#10B981" opacity=".09"/>
+  <circle cx="110" cy="120" r="260" fill="#C9954C" opacity=".06"/>
+  <circle cx="1090" cy="770" r="280" fill="#6B4C3B" opacity=".06"/>
   <rect x="40" y="40" width="1120" height="820" rx="40" fill="url(#grid)"/>
 
   <g filter="url(#shadow)">
     <rect x="82" y="92" width="1036" height="716" rx="26" fill="#FFFFFF"/>
     <g clip-path="url(#browserClip)">
-      <rect x="82" y="92" width="1036" height="52" fill="#F3F3F9"/>
-      <circle cx="112" cy="118" r="5" fill="#F87171"/>
-      <circle cx="132" cy="118" r="5" fill="#FBBF24"/>
-      <circle cx="152" cy="118" r="5" fill="#34D399"/>
-      <rect x="177" y="108" width="286" height="20" rx="10" fill="#FFFFFF"/>
-      <text x="192" y="122" fill="#9A99AA" font-family="Segoe UI, Arial, sans-serif" font-size="10">https://johnanderson.dev</text>
+      <rect x="82" y="92" width="1036" height="52" fill="#FAF8F5"/>
+      <circle cx="112" cy="118" r="5" fill="#D9A87C"/>
+      <circle cx="132" cy="118" r="5" fill="#C9954C"/>
+      <circle cx="152" cy="118" r="5" fill="#8C6E5A"/>
+      <rect x="177" y="108" width="286" height="20" rx="10" fill="#FFFFFF" stroke="#EFEBE4"/>
+      <text x="192" y="122" fill="#A89484" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="10">https://johnanderson.dev</text>
 
-      <rect x="82" y="144" width="1036" height="664" fill="#FBFBFE"/>
-      <circle cx="306" cy="288" r="202" fill="#4F46E5" opacity=".045"/>
-      <circle cx="996" cy="574" r="246" fill="#10B981" opacity=".05"/>
+      <rect x="82" y="144" width="1036" height="664" fill="#FFFFFF"/>
+      <circle cx="306" cy="288" r="202" fill="#C9954C" opacity=".04"/>
+      <circle cx="996" cy="574" r="246" fill="#6B4C3B" opacity=".04"/>
 
-      <rect x="122" y="176" width="90" height="30" rx="8" fill="#F0EFFC"/>
-      <text x="138" y="196" fill="#4F46E5" font-family="Georgia, serif" font-style="italic" font-size="16">John.</text>
+      <rect x="122" y="176" width="90" height="30" rx="8" fill="#F0EAE1"/>
+      <text x="138" y="196" fill="#6B4C3B" font-family="Bricolage Grotesque, Georgia, serif" font-style="italic" font-size="18" font-weight="600">John.</text>
 
-      <g fill="#77768A" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">
+      <g fill="#6B4C3B" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">
         <text x="493" y="194">Home</text>
         <text x="545" y="194">About</text>
         <text x="597" y="194">Work</text>
@@ -63,97 +63,97 @@
         <text x="701" y="194">Blog</text>
         <text x="753" y="194">Contact</text>
       </g>
-      <rect x="940" y="174" width="138" height="34" rx="9" fill="#4F46E5"/>
-      <text x="970" y="195" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">Let's talk ↗</text>
+      <rect x="940" y="174" width="138" height="34" rx="9" fill="#6B4C3B"/>
+      <text x="970" y="195" fill="#FAF8F5" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">Let's talk ↗</text>
 
-      <rect x="122" y="246" width="132" height="24" rx="12" fill="#EEF9F5"/>
-      <circle cx="136" cy="258" r="3.5" fill="#10B981"/>
-      <text x="147" y="262" fill="#0E9F6E" font-family="Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700">OPEN TO PROJECTS</text>
+      <rect x="122" y="246" width="132" height="24" rx="12" fill="#F2EBE1"/>
+      <circle cx="136" cy="258" r="3.5" fill="#C9954C"/>
+      <text x="147" y="262" fill="#8C6E5A" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700">OPEN TO PROJECTS</text>
 
-      <text x="122" y="326" fill="#171622" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="53" font-weight="700" letter-spacing="-2.4">Hi, I'm John.</text>
-      <text x="122" y="383" fill="#171622" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="53" font-weight="700" letter-spacing="-2.4">I build products</text>
-      <text x="122" y="440" fill="#4F46E5" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="53" font-weight="700" letter-spacing="-2.4">that feel effortless.</text>
+      <text x="122" y="326" fill="#1A0F09" font-family="Bricolage Grotesque, Georgia, serif" font-size="50" font-weight="700" letter-spacing="-1.5">Hi, I'm John.</text>
+      <text x="122" y="383" fill="#1A0F09" font-family="Bricolage Grotesque, Georgia, serif" font-size="50" font-weight="700" letter-spacing="-1.5">I build products</text>
+      <text x="122" y="440" fill="#6B4C3B" font-family="Bricolage Grotesque, Georgia, serif" font-style="italic" font-size="50" font-weight="700" letter-spacing="-1.5">that feel effortless.</text>
 
-      <text x="122" y="482" fill="#6F6E80" font-family="Segoe UI, Arial, sans-serif" font-size="11">Full-stack developer working across React, Node.js and</text>
-      <text x="122" y="500" fill="#6F6E80" font-family="Segoe UI, Arial, sans-serif" font-size="11">cloud delivery. Performance, accessibility and care.</text>
+      <text x="122" y="482" fill="#7D6556" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="11">Full-stack developer working across React, Node.js and</text>
+      <text x="122" y="500" fill="#7D6556" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="11">cloud delivery. Performance, accessibility and care.</text>
 
-      <rect x="122" y="534" width="162" height="42" rx="10" fill="#4F46E5"/>
-      <text x="151" y="559" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">Explore selected work →</text>
-      <rect x="297" y="534" width="124" height="42" rx="10" fill="#FFFFFF" stroke="#DEDDE9"/>
-      <text x="322" y="559" fill="#282635" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">View résumé</text>
+      <rect x="122" y="534" width="162" height="42" rx="10" fill="#6B4C3B"/>
+      <text x="151" y="559" fill="#FAF8F5" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">Explore selected work →</text>
+      <rect x="297" y="534" width="124" height="42" rx="10" fill="#FFFFFF" stroke="#D9CFC2"/>
+      <text x="322" y="559" fill="#4E3427" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">View résumé</text>
 
       <g transform="translate(0 0)">
-        <circle cx="852" cy="340" r="172" fill="none" stroke="#4F46E5" stroke-opacity=".16" stroke-dasharray="5 7"/>
+        <circle cx="852" cy="340" r="172" fill="none" stroke="#C9954C" stroke-opacity=".25" stroke-dasharray="5 7"/>
         <circle cx="852" cy="340" r="146" fill="url(#accent)" opacity=".12"/>
         <circle cx="852" cy="340" r="138" fill="url(#accent)"/>
         <g clip-path="url(#portraitClip)">
-          <rect x="714" y="201" width="282" height="282" fill="#E8E7FF"/>
-          <circle cx="895" cy="226" r="98" fill="#4F46E5" opacity=".14"/>
-          <path d="M744 484c8-78 49-118 116-118s108 40 116 118h-232z" fill="#17161F"/>
-          <path d="M806 353h92v58c0 32-20 54-46 54s-46-22-46-54v-58z" fill="#E2AF8A"/>
-          <ellipse cx="852" cy="306" rx="72" ry="84" fill="#EBBB98"/>
-          <path d="M779 303c-2-58 31-94 78-94 45 0 74 32 72 91-18-21-41-31-71-30-31 1-57 12-79 33z" fill="#26222D"/>
-          <path d="M781 292c-10 9-16 22-16 38 0 21 7 35 18 43l3-31-5-50z" fill="#26222D"/>
-          <path d="M922 292c10 9 16 22 16 38 0 21-7 35-18 43l-3-31 5-50z" fill="#26222D"/>
-          <circle cx="826" cy="316" r="4" fill="#24212B"/>
-          <circle cx="878" cy="316" r="4" fill="#24212B"/>
-          <path d="M846 352c4 3 9 3 13 0" fill="none" stroke="#9B5E43" stroke-width="3" stroke-linecap="round"/>
-          <path d="M819 264c17-10 48-12 68-2" fill="none" stroke="#17161F" stroke-width="3" stroke-linecap="round" opacity=".55"/>
-          <circle cx="852" cy="320" r="138" fill="#4F46E5" opacity=".03"/>
+          <rect x="714" y="201" width="282" height="282" fill="#EDE8DF"/>
+          <circle cx="895" cy="226" r="98" fill="#C9954C" opacity=".18"/>
+          <path d="M744 484c8-78 49-118 116-118s108 40 116 118h-232z" fill="#2E1D13"/>
+          <path d="M806 353h92v58c0 32-20 54-46 54s-46-22-46-54v-58z" fill="#D9A87C"/>
+          <ellipse cx="852" cy="306" rx="72" ry="84" fill="#E8C2A0"/>
+          <path d="M779 303c-2-58 31-94 78-94 45 0 74 32 72 91-18-21-41-31-71-30-31 1-57 12-79 33z" fill="#3D2619"/>
+          <path d="M781 292c-10 9-16 22-16 38 0 21 7 35 18 43l3-31-5-50z" fill="#3D2619"/>
+          <path d="M922 292c10 9 16 22 16 38 0 21-7 35-18 43l-3-31 5-50z" fill="#3D2619"/>
+          <circle cx="826" cy="316" r="4" fill="#1A0F09"/>
+          <circle cx="878" cy="316" r="4" fill="#1A0F09"/>
+          <path d="M846 352c4 3 9 3 13 0" fill="none" stroke="#8C5E45" stroke-width="3" stroke-linecap="round"/>
+          <path d="M819 264c17-10 48-12 68-2" fill="none" stroke="#2E1D13" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+          <circle cx="852" cy="320" r="138" fill="#6B4C3B" opacity=".04"/>
         </g>
       </g>
 
       <g filter="url(#cardShadow)">
-        <rect x="676" y="500" width="190" height="54" rx="12" fill="#FFFFFF" stroke="#EAE9F1"/>
-        <rect x="690" y="513" width="26" height="26" rx="6" fill="#EEF0FF"/>
-        <text x="703" y="530" fill="#4F46E5" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">⌘</text>
-        <text x="726" y="521" fill="#9B9AAB" font-family="Segoe UI, Arial, sans-serif" font-size="7">DAILY TOOLKIT</text>
-        <text x="726" y="536" fill="#252431" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">React · Node · TypeScript</text>
+        <rect x="676" y="500" width="190" height="54" rx="12" fill="#FFFFFF" stroke="#E8DFD3"/>
+        <rect x="690" y="513" width="26" height="26" rx="6" fill="#F5EFE6"/>
+        <text x="703" y="530" fill="#6B4C3B" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">⌘</text>
+        <text x="726" y="521" fill="#A89484" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="7">DAILY TOOLKIT</text>
+        <text x="726" y="536" fill="#2E1D13" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600">React · Node · TypeScript</text>
       </g>
 
-      <rect x="122" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#E9E8F1"/>
-      <rect x="140" y="638" width="133" height="9" rx="4.5" fill="#282635"/>
-      <rect x="140" y="655" width="202" height="5" rx="2.5" fill="#D9D8E4"/>
-      <rect x="140" y="666" width="172" height="5" rx="2.5" fill="#D9D8E4"/>
-      <rect x="140" y="696" width="218" height="44" rx="8" fill="#EEF0FF"/>
-      <path d="M158 723l19-14 16 9 25-19" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="218" cy="699" r="3" fill="#10B981"/>
+      <rect x="122" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#EDE5D8"/>
+      <rect x="140" y="638" width="133" height="9" rx="4.5" fill="#4E3427"/>
+      <rect x="140" y="655" width="202" height="5" rx="2.5" fill="#E5DACD"/>
+      <rect x="140" y="666" width="172" height="5" rx="2.5" fill="#E5DACD"/>
+      <rect x="140" y="696" width="218" height="44" rx="8" fill="#FAF5ED"/>
+      <path d="M158 723l19-14 16 9 25-19" fill="none" stroke="#8C6E5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="218" cy="699" r="3" fill="#C9954C"/>
 
-      <rect x="393" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#E9E8F1"/>
-      <rect x="411" y="638" width="111" height="9" rx="4.5" fill="#282635"/>
-      <rect x="411" y="655" width="202" height="5" rx="2.5" fill="#D9D8E4"/>
-      <rect x="411" y="666" width="164" height="5" rx="2.5" fill="#D9D8E4"/>
-      <rect x="411" y="693" width="86" height="47" rx="8" fill="#F4F3FA"/>
-      <rect x="505" y="693" width="62" height="20" rx="6" fill="#E9F8F1"/>
-      <rect x="505" y="720" width="42" height="20" rx="6" fill="#EEEAFE"/>
+      <rect x="393" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#EDE5D8"/>
+      <rect x="411" y="638" width="111" height="9" rx="4.5" fill="#4E3427"/>
+      <rect x="411" y="655" width="202" height="5" rx="2.5" fill="#E5DACD"/>
+      <rect x="411" y="666" width="164" height="5" rx="2.5" fill="#E5DACD"/>
+      <rect x="411" y="693" width="86" height="47" rx="8" fill="#F7F1E8"/>
+      <rect x="505" y="693" width="62" height="20" rx="6" fill="#F2ECE0"/>
+      <rect x="505" y="720" width="42" height="20" rx="6" fill="#EDE3D3"/>
 
-      <rect x="664" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#E9E8F1"/>
-      <rect x="682" y="638" width="142" height="9" rx="4.5" fill="#282635"/>
-      <rect x="682" y="655" width="193" height="5" rx="2.5" fill="#D9D8E4"/>
-      <rect x="682" y="666" width="154" height="5" rx="2.5" fill="#D9D8E4"/>
-      <circle cx="713" cy="715" r="21" fill="#4F46E5" opacity=".12"/>
-      <circle cx="713" cy="715" r="7" fill="#4F46E5"/>
-      <path d="M748 707h82M748 719h58M748 731h72" stroke="#D9D8E4" stroke-width="5" stroke-linecap="round"/>
+      <rect x="664" y="620" width="255" height="138" rx="15" fill="#FFFFFF" stroke="#EDE5D8"/>
+      <rect x="682" y="638" width="142" height="9" rx="4.5" fill="#4E3427"/>
+      <rect x="682" y="655" width="193" height="5" rx="2.5" fill="#E5DACD"/>
+      <rect x="682" y="666" width="154" height="5" rx="2.5" fill="#E5DACD"/>
+      <circle cx="713" cy="715" r="21" fill="#C9954C" opacity=".14"/>
+      <circle cx="713" cy="715" r="7" fill="#8C6E5A"/>
+      <path d="M748 707h82M748 719h58M748 731h72" stroke="#E5DACD" stroke-width="5" stroke-linecap="round"/>
 
-      <rect x="935" y="620" width="143" height="138" rx="15" fill="#17161F"/>
-      <text x="954" y="651" fill="#A5B4FC" font-family="Consolas, monospace" font-size="8">const</text>
-      <text x="986" y="651" fill="#E8E7F2" font-family="Consolas, monospace" font-size="8">john = {</text>
-      <text x="954" y="668" fill="#6EE7B7" font-family="Consolas, monospace" font-size="8">'product'</text>
-      <text x="999" y="668" fill="#E8E7F2" font-family="Consolas, monospace" font-size="8">: true,</text>
-      <text x="954" y="685" fill="#6EE7B7" font-family="Consolas, monospace" font-size="8">'calm'</text>
-      <text x="989" y="685" fill="#E8E7F2" font-family="Consolas, monospace" font-size="8">: true,</text>
-      <text x="954" y="702" fill="#6EE7B7" font-family="Consolas, monospace" font-size="8">'fast'</text>
-      <text x="982" y="702" fill="#E8E7F2" font-family="Consolas, monospace" font-size="8">: true</text>
-      <text x="954" y="719" fill="#E8E7F2" font-family="Consolas, monospace" font-size="8">};</text>
-      <circle cx="1048" cy="646" r="4" fill="#34D399"/>
+      <rect x="935" y="620" width="143" height="138" rx="15" fill="#1A0F09"/>
+      <text x="954" y="651" fill="#E8C27A" font-family="Consolas, monospace" font-size="8">const</text>
+      <text x="986" y="651" fill="#FAF8F5" font-family="Consolas, monospace" font-size="8">john = {</text>
+      <text x="954" y="668" fill="#D4A574" font-family="Consolas, monospace" font-size="8">'product'</text>
+      <text x="999" y="668" fill="#FAF8F5" font-family="Consolas, monospace" font-size="8">: true,</text>
+      <text x="954" y="685" fill="#D4A574" font-family="Consolas, monospace" font-size="8">'calm'</text>
+      <text x="989" y="685" fill="#FAF8F5" font-family="Consolas, monospace" font-size="8">: true,</text>
+      <text x="954" y="702" fill="#D4A574" font-family="Consolas, monospace" font-size="8">'fast'</text>
+      <text x="982" y="702" fill="#FAF8F5" font-family="Consolas, monospace" font-size="8">: true</text>
+      <text x="954" y="719" fill="#FAF8F5" font-family="Consolas, monospace" font-size="8">};</text>
+      <circle cx="1048" cy="646" r="4" fill="#C9954C"/>
     </g>
   </g>
 
   <g filter="url(#cardShadow)">
     <rect x="910" y="60" width="188" height="58" rx="14" fill="#FFFFFF"/>
-    <circle cx="936" cy="89" r="13" fill="#EEF9F5"/>
-    <circle cx="936" cy="89" r="5" fill="#10B981"/>
-    <text x="958" y="85" fill="#9B9AAB" font-family="Segoe UI, Arial, sans-serif" font-size="7.5">BASED IN</text>
-    <text x="958" y="99" fill="#252431" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">San Francisco, CA</text>
+    <circle cx="936" cy="89" r="13" fill="#F4EFE6"/>
+    <circle cx="936" cy="89" r="5" fill="#C9954C"/>
+    <text x="958" y="85" fill="#A89484" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="7.5">BASED IN</text>
+    <text x="958" y="99" fill="#2E1D13" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">San Francisco, CA</text>
   </g>
 </svg>

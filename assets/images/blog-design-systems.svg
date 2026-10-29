@@ -1,101 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Design systems that stay small</title>
-  <desc id="desc">An editorial illustration of interface components, type specimens and colour tokens on an indigo background.</desc>
+  <desc id="desc">An editorial illustration of interface components, type specimens and colour tokens on a warm brown background.</desc>
   <defs>
     <linearGradient id="bg" x1="40" y1="0" x2="1160" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#17162E"/>
-      <stop offset=".55" stop-color="#23215A"/>
-      <stop offset="1" stop-color="#101C2B"/>
+      <stop offset="0" stop-color="#23140D"/>
+      <stop offset=".55" stop-color="#2E1D13"/>
+      <stop offset="1" stop-color="#1A0F09"/>
     </linearGradient>
     <linearGradient id="accent" x1="720" y1="120" x2="1060" y2="520" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#818CF8"/>
-      <stop offset=".55" stop-color="#A78BFA"/>
-      <stop offset="1" stop-color="#34D399"/>
+      <stop offset="0" stop-color="#C9954C"/>
+      <stop offset=".55" stop-color="#E8C27A"/>
+      <stop offset="1" stop-color="#8C6E5A"/>
     </linearGradient>
     <linearGradient id="panel" x1="710" y1="100" x2="1060" y2="540" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".12"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".02"/>
     </linearGradient>
     <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="26" stdDeviation="30" flood-color="#05040F" flood-opacity=".45"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity=".55"/>
     </filter>
     <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#FFFFFF" stroke-opacity=".045"/>
+      <path d="M42 0H0V42" fill="none" stroke="#C9954C" stroke-opacity=".04"/>
     </pattern>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <circle cx="120" cy="92" r="250" fill="#4F46E5" opacity=".18"/>
-  <circle cx="1100" cy="600" r="280" fill="#10B981" opacity=".09"/>
-  <circle cx="980" cy="80" r="150" fill="#A78BFA" opacity=".1"/>
-  <path d="M0 530c240-130 410-80 620 12 180 80 360 70 580-22v110H0z" fill="#FFFFFF" opacity=".025"/>
+  <circle cx="120" cy="92" r="250" fill="#6B4C3B" opacity=".18"/>
+  <circle cx="1100" cy="600" r="280" fill="#C9954C" opacity=".08"/>
+  <circle cx="980" cy="80" r="150" fill="#E8C27A" opacity=".08"/>
+  <path d="M0 530c240-130 410-80 620 12 180 80 360 70 580-22v110H0z" fill="#FAF8F5" opacity=".015"/>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
+  <g font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">
     <rect x="72" y="64" width="184" height="32" rx="16" fill="#FFFFFF" opacity=".08"/>
-    <circle cx="90" cy="80" r="4" fill="#34D399"/>
-    <text x="102" y="84" fill="#C7D2FE" font-size="10" font-weight="700" letter-spacing="1.5">DESIGN ENGINEERING</text>
+    <circle cx="90" cy="80" r="4" fill="#C9954C"/>
+    <text x="102" y="84" fill="#E8C27A" font-size="10" font-weight="700" letter-spacing="1.5">DESIGN ENGINEERING</text>
 
-    <text x="72" y="202" fill="#FFFFFF" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-3">Small systems,</text>
-    <text x="72" y="275" fill="#A5B4FC" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="67" font-weight="700" letter-spacing="-3">clear decisions.</text>
+    <text x="72" y="202" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="67" font-weight="700" letter-spacing="-1.5">Small systems,</text>
+    <text x="72" y="275" fill="#E8C27A" font-family="Bricolage Grotesque, Georgia, serif" font-style="italic" font-size="67" font-weight="700" letter-spacing="-1.5">clear decisions.</text>
 
-    <text x="74" y="330" fill="#C6C5DB" font-size="14">A design system earns its keep when it helps the product</text>
-    <text x="74" y="353" fill="#C6C5DB" font-size="14">move — not when it becomes another product to maintain.</text>
+    <text x="74" y="330" fill="#D9CFC2" font-size="14">A design system earns its keep when it helps the product</text>
+    <text x="74" y="353" fill="#D9CFC2" font-size="14">move — not when it becomes another product to maintain.</text>
 
-    <rect x="72" y="400" width="118" height="40" rx="10" fill="#4F46E5"/>
-    <text x="98" y="425" fill="#FFFFFF" font-size="11" font-weight="600">Read the note →</text>
-    <rect x="202" y="400" width="118" height="40" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity=".2"/>
-    <text x="225" y="425" fill="#E4E3F1" font-size="11" font-weight="600">Design system</text>
+    <rect x="72" y="400" width="138" height="40" rx="10" fill="#6B4C3B"/>
+    <text x="96" y="425" fill="#FAF8F5" font-size="11" font-weight="600">Read the note →</text>
+    <rect x="222" y="400" width="128" height="40" rx="10" fill="none" stroke="#FAF8F5" stroke-opacity=".2"/>
+    <text x="245" y="425" fill="#EDE8DF" font-size="11" font-weight="600">Design system</text>
 
-    <text x="72" y="548" fill="#8C8BA7" font-size="10" font-weight="700" letter-spacing="2">JOHN ANDERSON / NOTES</text>
-    <text x="1090" y="548" fill="#8C8BA7" font-size="10" font-weight="700" letter-spacing="2" text-anchor="end">01 / 03</text>
+    <text x="72" y="548" fill="#A89484" font-size="10" font-weight="700" letter-spacing="2">JOHN ANDERSON / NOTES</text>
+    <text x="1090" y="548" fill="#A89484" font-size="10" font-weight="700" letter-spacing="2" text-anchor="end">01 / 03</text>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="695" y="92" width="420" height="450" rx="27" fill="#0E0D1C" stroke="#FFFFFF" stroke-opacity=".12"/>
+    <rect x="695" y="92" width="420" height="450" rx="27" fill="#1C1109" stroke="#C9954C" stroke-opacity=".18"/>
     <rect x="715" y="112" width="380" height="55" rx="14" fill="url(#panel)"/>
-    <circle cx="737" cy="139" r="8" fill="#F87171" opacity=".9"/>
-    <circle cx="761" cy="139" r="8" fill="#FBBF24" opacity=".9"/>
-    <circle cx="785" cy="139" r="8" fill="#34D399" opacity=".9"/>
-    <text x="1052" y="144" fill="#8C8BA7" font-family="Consolas, monospace" font-size="10" text-anchor="end">tokens.css</text>
+    <circle cx="737" cy="139" r="8" fill="#D9A87C" opacity=".9"/>
+    <circle cx="761" cy="139" r="8" fill="#C9954C" opacity=".9"/>
+    <circle cx="785" cy="139" r="8" fill="#8C6E5A" opacity=".9"/>
+    <text x="1052" y="144" fill="#A89484" font-family="Consolas, monospace" font-size="10" text-anchor="end">tokens.css</text>
 
-    <g font-family="Segoe UI, Arial, sans-serif">
-      <text x="735" y="205" fill="#8C8BA7" font-size="9" font-weight="700" letter-spacing="1.4">TYPOGRAPHY</text>
-      <text x="735" y="261" fill="#FFFFFF" font-family="Georgia, serif" font-size="46">Aa</text>
-      <text x="808" y="229" fill="#E8E7F2" font-size="15" font-weight="600">Sora SemiBold</text>
-      <text x="808" y="248" fill="#8C8BA7" font-size="10">Display / 48 px / 1.1</text>
-      <rect x="808" y="260" width="168" height="5" rx="2.5" fill="#34324B"/>
-      <rect x="808" y="273" width="127" height="5" rx="2.5" fill="#34324B"/>
+    <g font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">
+      <text x="735" y="205" fill="#A89484" font-size="9" font-weight="700" letter-spacing="1.4">TYPOGRAPHY</text>
+      <text x="735" y="261" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="46" font-style="italic">Aa</text>
+      <text x="808" y="229" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="16" font-weight="600">Bricolage Grotesque</text>
+      <text x="808" y="248" fill="#A89484" font-size="10">Display / 48 px / 1.05</text>
+      <rect x="808" y="260" width="168" height="5" rx="2.5" fill="#4E3427"/>
+      <rect x="808" y="273" width="127" height="5" rx="2.5" fill="#4E3427"/>
 
-      <rect x="735" y="310" width="336" height="1" fill="#FFFFFF" opacity=".08"/>
-      <text x="735" y="344" fill="#8C8BA7" font-size="9" font-weight="700" letter-spacing="1.4">COMPONENTS</text>
+      <rect x="735" y="310" width="336" height="1" fill="#C9954C" opacity=".12"/>
+      <text x="735" y="344" fill="#A89484" font-size="9" font-weight="700" letter-spacing="1.4">COMPONENTS</text>
 
-      <rect x="735" y="360" width="120" height="42" rx="10" fill="#4F46E5"/>
-      <text x="770" y="386" fill="#FFFFFF" font-size="11" font-weight="600">Primary</text>
-      <rect x="866" y="360" width="106" height="42" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity=".22"/>
-      <text x="894" y="386" fill="#E8E7F2" font-size="11" font-weight="600">Ghost</text>
-      <rect x="983" y="360" width="88" height="42" rx="10" fill="#10B981" opacity=".15"/>
-      <text x="1009" y="386" fill="#6EE7B7" font-size="11" font-weight="600">Success</text>
+      <rect x="735" y="360" width="120" height="42" rx="10" fill="#6B4C3B"/>
+      <text x="770" y="386" fill="#FAF8F5" font-size="11" font-weight="600">Primary</text>
+      <rect x="866" y="360" width="106" height="42" rx="10" fill="none" stroke="#C9954C" stroke-opacity=".35"/>
+      <text x="894" y="386" fill="#EDE8DF" font-size="11" font-weight="600">Ghost</text>
+      <rect x="983" y="360" width="88" height="42" rx="10" fill="#C9954C" opacity=".2"/>
+      <text x="1009" y="386" fill="#E8C27A" font-size="11" font-weight="600">Accent</text>
 
-      <rect x="735" y="420" width="336" height="86" rx="14" fill="#FFFFFF" opacity=".045"/>
-      <circle cx="764" cy="450" r="14" fill="#818CF8" opacity=".2"/>
-      <path d="M758 450l4 4 8-9" fill="none" stroke="#A5B4FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <rect x="790" y="439" width="124" height="7" rx="3.5" fill="#DAD9E8"/>
-      <rect x="790" y="454" width="204" height="5" rx="2.5" fill="#5C5A78"/>
-      <rect x="790" y="466" width="168" height="5" rx="2.5" fill="#5C5A78"/>
-      <rect x="1004" y="439" width="42" height="18" rx="9" fill="#34D399" opacity=".18"/>
-      <circle cx="1038" cy="448" r="5" fill="#34D399"/>
+      <rect x="735" y="420" width="336" height="86" rx="14" fill="#FFFFFF" opacity=".035"/>
+      <circle cx="764" cy="450" r="14" fill="#C9954C" opacity=".2"/>
+      <path d="M758 450l4 4 8-9" fill="none" stroke="#E8C27A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="790" y="439" width="124" height="7" rx="3.5" fill="#D9CFC2"/>
+      <rect x="790" y="454" width="204" height="5" rx="2.5" fill="#4E3427"/>
+      <rect x="790" y="466" width="168" height="5" rx="2.5" fill="#4E3427"/>
+      <rect x="1004" y="439" width="42" height="18" rx="9" fill="#C9954C" opacity=".2"/>
+      <circle cx="1038" cy="448" r="5" fill="#C9954C"/>
     </g>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="1093" y="58" width="54" height="54" rx="14" fill="#FFFFFF" opacity=".1"/>
-    <path d="M1108 85l8 8 16-18" fill="none" stroke="#6EE7B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1093" y="58" width="54" height="54" rx="14" fill="#2E1D13" stroke="#C9954C" stroke-opacity=".3"/>
+    <path d="M1108 85l8 8 16-18" fill="none" stroke="#E8C27A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
   <g fill="none" stroke="url(#accent)" stroke-width="1.5" opacity=".62">
     <circle cx="1020" cy="520" r="52" stroke-dasharray="4 8"/>
     <circle cx="1020" cy="520" r="70" stroke-opacity=".35"/>
   </g>
-  <circle cx="1020" cy="520" r="4" fill="#34D399"/>
+  <circle cx="1020" cy="520" r="4" fill="#C9954C"/>
 </svg>

@@ -9,7 +9,7 @@
     stored = null;
   }
 
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  var theme = stored === 'light' || stored === 'dark' ? stored : prefersDark ? 'dark' : 'light';
+  // Default to the white and brown light theme unless explicitly chosen
+  var theme = stored === 'light' || stored === 'dark' ? stored : 'light';
   root.setAttribute('data-theme', theme);
 })();

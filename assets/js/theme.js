@@ -10,8 +10,8 @@
     return /dark/i.test(meta.getAttribute('media') || '');
   })[0];
   var colors = {
-    light: lightMeta ? lightMeta.getAttribute('content') : '#4F46E5',
-    dark: darkMeta ? darkMeta.getAttribute('content') : '#0B0B10'
+    light: lightMeta ? lightMeta.getAttribute('content') : '#ffffff',
+    dark: darkMeta ? darkMeta.getAttribute('content') : '#120b07'
   };
 
   function storedTheme() {

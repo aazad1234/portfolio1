@@ -1,103 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">A practical performance budget</title>
-  <desc id="desc">A dark performance dashboard with a rising speed chart and Core Web Vitals cards.</desc>
+  <desc id="desc">A warm editorial performance dashboard with a rising speed chart and Core Web Vitals cards.</desc>
   <defs>
     <linearGradient id="bg" x1="70" y1="0" x2="1130" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0A0D19"/>
-      <stop offset=".52" stop-color="#101A31"/>
-      <stop offset="1" stop-color="#0B2320"/>
+      <stop offset="0" stop-color="#1A0F09"/>
+      <stop offset=".52" stop-color="#28180F"/>
+      <stop offset="1" stop-color="#1C1008"/>
     </linearGradient>
     <linearGradient id="line" x1="90" y1="430" x2="720" y2="240" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#34D399"/>
-      <stop offset="1" stop-color="#A7F3D0"/>
+      <stop offset="0" stop-color="#C9954C"/>
+      <stop offset="1" stop-color="#E8C27A"/>
     </linearGradient>
     <linearGradient id="area" x1="90" y1="300" x2="90" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#34D399" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#34D399" stop-opacity="0"/>
+      <stop offset="0" stop-color="#C9954C" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#C9954C" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ring" x1="860" y1="120" x2="1080" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6EE7B7"/>
-      <stop offset=".55" stop-color="#34D399"/>
-      <stop offset="1" stop-color="#818CF8"/>
+      <stop offset="0" stop-color="#E8C27A"/>
+      <stop offset=".55" stop-color="#C9954C"/>
+      <stop offset="1" stop-color="#8C6E5A"/>
     </linearGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity=".45"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity=".55"/>
     </filter>
     <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M50 0H0V50" fill="none" stroke="#FFFFFF" stroke-opacity=".04"/>
+      <path d="M50 0H0V50" fill="none" stroke="#C9954C" stroke-opacity=".04"/>
     </pattern>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <circle cx="1040" cy="66" r="260" fill="#34D399" opacity=".09"/>
-  <circle cx="110" cy="560" r="260" fill="#4F46E5" opacity=".12"/>
+  <circle cx="1040" cy="66" r="260" fill="#C9954C" opacity=".08"/>
+  <circle cx="110" cy="560" r="260" fill="#6B4C3B" opacity=".12"/>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <rect x="70" y="58" width="168" height="32" rx="16" fill="#34D399" opacity=".1"/>
-    <circle cx="88" cy="74" r="3.5" fill="#34D399"/>
-    <text x="100" y="78" fill="#6EE7B7" font-size="10" font-weight="700" letter-spacing="1.5">PERFORMANCE</text>
+  <g font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">
+    <rect x="70" y="58" width="168" height="32" rx="16" fill="#C9954C" opacity=".14"/>
+    <circle cx="88" cy="74" r="3.5" fill="#E8C27A"/>
+    <text x="100" y="78" fill="#E8C27A" font-size="10" font-weight="700" letter-spacing="1.5">PERFORMANCE</text>
 
-    <text x="70" y="188" fill="#FFFFFF" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="-3">A budget you can</text>
-    <text x="70" y="253" fill="#6EE7B7" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="-3">actually protect.</text>
-    <text x="72" y="302" fill="#9AA7B8" font-size="14">Attach performance limits to user experience, then keep</text>
-    <text x="72" y="325" fill="#9AA7B8" font-size="14">them visible while the product keeps changing.</text>
+    <text x="70" y="188" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="62" font-weight="700" letter-spacing="-1.5">A budget you can</text>
+    <text x="70" y="253" fill="#E8C27A" font-family="Bricolage Grotesque, Georgia, serif" font-style="italic" font-size="62" font-weight="700" letter-spacing="-1.5">actually protect.</text>
+    <text x="72" y="302" fill="#D9CFC2" font-size="14">Attach performance limits to user experience, then keep</text>
+    <text x="72" y="325" fill="#D9CFC2" font-size="14">them visible while the product keeps changing.</text>
 
-    <text x="72" y="545" fill="#6E7A8C" font-size="10" font-weight="700" letter-spacing="2">JOHN ANDERSON / NOTES</text>
-    <text x="1128" y="545" fill="#6E7A8C" font-size="10" font-weight="700" letter-spacing="2" text-anchor="end">02 / 03</text>
+    <text x="72" y="545" fill="#A89484" font-size="10" font-weight="700" letter-spacing="2">JOHN ANDERSON / NOTES</text>
+    <text x="1128" y="545" fill="#A89484" font-size="10" font-weight="700" letter-spacing="2" text-anchor="end">02 / 03</text>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="640" y="70" width="490" height="480" rx="28" fill="#0D1422" stroke="#FFFFFF" stroke-opacity=".1"/>
-    <g font-family="Segoe UI, Arial, sans-serif">
-      <text x="674" y="113" fill="#7E8B9E" font-size="9" font-weight="700" letter-spacing="1.4">PERFORMANCE TREND</text>
-      <text x="674" y="156" fill="#FFFFFF" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="29" font-weight="600">92</text>
-      <text x="710" y="155" fill="#6EE7B7" font-size="11" font-weight="600">▲ 14 pts</text>
-      <text x="1096" y="113" fill="#6E7A8C" font-size="9" text-anchor="end">LAST 90 DAYS</text>
+    <rect x="640" y="70" width="490" height="480" rx="28" fill="#23140D" stroke="#C9954C" stroke-opacity=".18"/>
+    <g font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">
+      <text x="674" y="113" fill="#A89484" font-size="9" font-weight="700" letter-spacing="1.4">PERFORMANCE TREND</text>
+      <text x="674" y="156" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="32" font-weight="700">92</text>
+      <text x="718" y="155" fill="#E8C27A" font-size="11" font-weight="600">▲ 14 pts</text>
+      <text x="1096" y="113" fill="#A89484" font-size="9" text-anchor="end">LAST 90 DAYS</text>
 
-      <path d="M674 460V210M674 460h390" stroke="#FFFFFF" stroke-opacity=".12"/>
-      <path d="M674 390h390M674 320h390M674 250h390" stroke="#FFFFFF" stroke-opacity=".055" stroke-dasharray="4 7"/>
+      <path d="M674 460V210M674 460h390" stroke="#C9954C" stroke-opacity=".15"/>
+      <path d="M674 390h390M674 320h390M674 250h390" stroke="#C9954C" stroke-opacity=".07" stroke-dasharray="4 7"/>
 
       <path d="M674 420c46-10 74-5 118-41 38-31 57-24 87-75 28-47 58-39 90-74 22-24 52-26 95-39v269H674z" fill="url(#area)"/>
       <path d="M674 420c46-10 74-5 118-41 38-31 57-24 87-75 28-47 58-39 90-74 22-24 52-26 95-39" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
-      <circle cx="1064" cy="191" r="7" fill="#34D399"/>
-      <circle cx="1064" cy="191" r="14" fill="#34D399" opacity=".14"/>
+      <circle cx="1064" cy="191" r="7" fill="#E8C27A"/>
+      <circle cx="1064" cy="191" r="14" fill="#C9954C" opacity=".2"/>
 
       <g>
-        <rect x="674" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".045"/>
-        <text x="688" y="507" fill="#7E8B9E" font-size="8">LCP</text>
-        <text x="722" y="507" fill="#E8EEF7" font-size="10" font-weight="600">1.4s</text>
-        <rect x="796" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".045"/>
-        <text x="810" y="507" fill="#7E8B9E" font-size="8">CLS</text>
-        <text x="844" y="507" fill="#E8EEF7" font-size="10" font-weight="600">0.02</text>
-        <rect x="918" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".045"/>
-        <text x="932" y="507" fill="#7E8B9E" font-size="8">INP</text>
-        <text x="966" y="507" fill="#E8EEF7" font-size="10" font-weight="600">86ms</text>
+        <rect x="674" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".04"/>
+        <text x="688" y="507" fill="#A89484" font-size="8">LCP</text>
+        <text x="722" y="507" fill="#FAF8F5" font-size="10" font-weight="600">1.4s</text>
+        <rect x="796" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".04"/>
+        <text x="810" y="507" fill="#A89484" font-size="8">CLS</text>
+        <text x="844" y="507" fill="#FAF8F5" font-size="10" font-weight="600">0.02</text>
+        <rect x="918" y="486" width="112" height="34" rx="8" fill="#FFFFFF" opacity=".04"/>
+        <text x="932" y="507" fill="#A89484" font-size="8">INP</text>
+        <text x="966" y="507" fill="#FAF8F5" font-size="10" font-weight="600">86ms</text>
       </g>
     </g>
   </g>
 
   <g filter="url(#shadow)">
-    <circle cx="983" cy="210" r="74" fill="#0D1422" stroke="#FFFFFF" stroke-opacity=".08"/>
-    <circle cx="983" cy="210" r="60" fill="none" stroke="#1C2838" stroke-width="10"/>
+    <circle cx="983" cy="210" r="74" fill="#23140D" stroke="#C9954C" stroke-opacity=".15"/>
+    <circle cx="983" cy="210" r="60" fill="none" stroke="#3D2619" stroke-width="10"/>
     <circle cx="983" cy="210" r="60" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round" stroke-dasharray="330 377" transform="rotate(-90 983 210)"/>
-    <text x="983" y="208" fill="#FFFFFF" font-family="Segoe UI Variable Display, Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" text-anchor="middle">95</text>
-    <text x="983" y="227" fill="#6E7A8C" font-family="Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle" letter-spacing="1">LIGHTHOUSE</text>
+    <text x="983" y="208" fill="#FAF8F5" font-family="Bricolage Grotesque, Georgia, serif" font-size="30" font-weight="700" text-anchor="middle">95</text>
+    <text x="983" y="227" fill="#A89484" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif" font-size="8" text-anchor="middle" letter-spacing="1">LIGHTHOUSE</text>
   </g>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <rect x="70" y="382" width="154" height="38" rx="9" fill="#34D399" opacity=".13" stroke="#34D399" stroke-opacity=".2"/>
-    <text x="94" y="406" fill="#6EE7B7" font-size="11" font-weight="600">Budget in CI ✓</text>
+  <g font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">
+    <rect x="70" y="382" width="154" height="38" rx="9" fill="#C9954C" opacity=".18" stroke="#C9954C" stroke-opacity=".3"/>
+    <text x="94" y="406" fill="#E8C27A" font-size="11" font-weight="600">Budget in CI ✓</text>
     <rect x="236" y="382" width="154" height="38" rx="9" fill="#FFFFFF" opacity=".05" stroke="#FFFFFF" stroke-opacity=".1"/>
-    <text x="258" y="406" fill="#CAD3E1" font-size="11" font-weight="600">Core Web Vitals</text>
+    <text x="258" y="406" fill="#D9CFC2" font-size="11" font-weight="600">Core Web Vitals</text>
     <rect x="402" y="382" width="146" height="38" rx="9" fill="#FFFFFF" opacity=".05" stroke="#FFFFFF" stroke-opacity=".1"/>
-    <text x="424" y="406" fill="#CAD3E1" font-size="11" font-weight="600">Real devices</text>
+    <text x="424" y="406" fill="#D9CFC2" font-size="11" font-weight="600">Real devices</text>
   </g>
 </svg>
