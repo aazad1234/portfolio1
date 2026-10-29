@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="John Anderson">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="John Anderson Full-Stack Developer">
   <defs>
-    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="62" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6b4c3b"/>
-      <stop offset=".58" stop-color="#4e3427"/>
-      <stop offset="1" stop-color="#2e1d13"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="14" y1="2" x2="36" y2="34" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="p1-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#341D13"/>
+      <stop offset="100%" stop-color="#180E09"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
-  <circle cx="14" cy="11" r="19" fill="url(#shine)"/>
-  <path d="M38 16H27v6h5v15c0 4.4-2 6.5-6 6.5-2.2 0-4.3-.8-6-2.3l-3.3 5.2c2.4 2 5.5 3.1 9.4 3.1 7.3 0 12-4.3 12-12.1V16z" fill="#FAF8F5"/>
-  <circle cx="47.5" cy="46.5" r="4.5" fill="#C9954C"/>
+  <!-- Background rounded tile in deep espresso -->
+  <rect width="64" height="64" rx="15" fill="url(#p1-bg)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="13" fill="none" stroke="#C9954C" stroke-width="1.2" stroke-opacity="0.35"/>
+  
+  <!-- Code chevron / Full-stack bracket -->
+  <path d="M18 24 L12 30 L18 36" fill="none" stroke="#C9954C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- J Monogram with terminal bracket alignment -->
+  <path d="M38 17H28v5h4v15c0 4-1.8 6-5.4 6-2.1 0-4-.7-5.5-2.1l-3 4.8c2.3 2 5.3 3.1 9 3.1 7 0 11.5-4 11.5-11.8V17z" fill="#FAF8F5"/>
+  
+  <!-- Closing chevron & execution beacon -->
+  <path d="M46 24 L52 30 L46 36" fill="none" stroke="#C9954C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="49" cy="46" r="3.8" fill="#C9954C"/>
+  <circle cx="49" cy="46" r="1.6" fill="#180E09"/>
 </svg>
